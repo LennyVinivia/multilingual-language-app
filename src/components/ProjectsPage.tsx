@@ -6,6 +6,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
 import placeholder from "@/public/img/placeholder.png";
+import { FaPlus } from "react-icons/fa6";
 
 type Project = {
   id: number;
@@ -47,19 +48,15 @@ export default function ProjectsPageContent() {
     },
   ]);
 
-  // For dynamic search
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
 
-  // For multi-select categories
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-  // For single-select date range
   const [selectedDateRange, setSelectedDateRange] = useState<string | null>(
     null
   );
 
-  // Debounce searchTerm updates
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearchTerm(searchTerm);
@@ -67,7 +64,6 @@ export default function ProjectsPageContent() {
     return () => clearTimeout(timer);
   }, [searchTerm]);
 
-  // The actual filtering logic
   const filteredProjects = useMemo(() => {
     return projects.filter((p) => {
       if (debouncedSearchTerm) {
@@ -127,7 +123,7 @@ export default function ProjectsPageContent() {
           onSearch={(val) => setSearchTerm(val)}
           dynamic
         />
-        <Button>Create Project</Button>
+        <Button icon={<FaPlus className="h-4 w-4" />}>Create Project</Button>
       </div>
       <div className="flex gap-2 mb-8">
         <FilterDropdown
