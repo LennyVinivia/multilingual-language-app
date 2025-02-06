@@ -55,15 +55,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const Comp = asChild ? Slot : "button";
-    // Check if there's actual text children
     const hasTextChildren = React.Children.count(children) > 0;
-    // We'll add gap-2 if there's both text and an icon
     const gapClass = icon && hasTextChildren ? "gap-2" : "";
 
-    const classes = cn(
-      buttonVariants({ variant, size, className }),
-      gapClass // merges with the base "gap-0"
-    );
+    const classes = cn(buttonVariants({ variant, size, className }), gapClass);
     return (
       <Comp ref={ref} className={classes} {...props}>
         {icon && iconPosition === "left" && icon}

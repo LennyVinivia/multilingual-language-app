@@ -7,6 +7,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
 import placeholder from "@/public/img/placeholder.png";
 import { FaPlus } from "react-icons/fa6";
+import Link from "next/link";
 
 type Project = {
   id: number;
@@ -123,7 +124,9 @@ export default function ProjectsPageContent() {
           onSearch={(val) => setSearchTerm(val)}
           dynamic
         />
-        <Button icon={<FaPlus className="h-4 w-4" />}>Create Project</Button>
+        <Link href="/create-project">
+          <Button icon={<FaPlus className="h-4 w-4" />}>Create Project</Button>
+        </Link>
       </div>
       <div className="flex gap-2 mb-8">
         <FilterDropdown
