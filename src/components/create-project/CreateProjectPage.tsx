@@ -28,6 +28,10 @@ export type ProjectData = {
   responsibleDoctor: string;
   scannedId?: boolean;
   scannedInsurance?: boolean;
+  idFrontImage?: string | null;
+  idBackImage?: string | null;
+  insuranceFrontImage?: string | null;
+  insuranceBackImage: string | null;
 };
 
 export default function CreateProjectPage() {
@@ -54,6 +58,10 @@ export default function CreateProjectPage() {
     responsibleDoctor: "",
     scannedId: false,
     scannedInsurance: false,
+    idFrontImage: null,
+    idBackImage: null,
+    insuranceFrontImage: null,
+    insuranceBackImage: null,
   });
 
   const [currentStep, setCurrentStep] = useState(1);
@@ -79,7 +87,7 @@ export default function CreateProjectPage() {
 
   const handleSave = () => {
     console.log("Final data:", formData);
-    router.push("/projects");
+    router.push("/");
   };
 
   return (
