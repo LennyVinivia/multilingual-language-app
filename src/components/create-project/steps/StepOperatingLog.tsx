@@ -1,9 +1,13 @@
 "use client";
 
 import { LabeledInput } from "@/components/ui/labeled-input";
-import { ProjectData } from "../CreateProjectPage";
+import { Patient, ProjectData } from "../CreateProjectPage";
 import { InlineCheckboxGroup } from "@/components/ui/inline-checkbox-group";
-import { FC } from "react";
+import { FC, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { AddPatientModal } from "@/components/PatientModal";
+import { FaRegTrashCan } from "react-icons/fa6";
+import { FiEdit } from "react-icons/fi";
 
 interface OperationLogProps {
   data: ProjectData;
@@ -17,6 +21,42 @@ export const StepOperationLog: FC<OperationLogProps> = ({
   data,
   onUpdateField,
 }) => {
+  const [showPatientModal, setShowPatientModal] = useState(false);
+  const [editingPatientIndex, setEditingPatientIndex] = useState<number | null>(
+    null
+  );
+
+  // 1) When we add a new patient
+  const handleAddPatient = (newPatient: Patient) => {
+    onUpdateField("patients", [...data.patients, newPatient]);
+  };
+
+  // 2) When we edit an existing patient
+  const handleUpdatePatient = (index: number, updatedPatient: Patient) => {
+    const newPatients = [...data.patients];
+    newPatients[index] = updatedPatient;
+    onUpdateField("patients", newPatients);
+  };
+
+  // 3) Delete a patient from the array
+  const handleDeletePatient = (index: number) => {
+    const newPatients = [...data.patients];
+    newPatients.splice(index, 1); // remove 1 item at 'index'
+    onUpdateField("patients", newPatients);
+  };
+
+  // Open the modal in "edit" mode with the data from that patient index
+  const handleEditClick = (index: number) => {
+    setEditingPatientIndex(index);
+    setShowPatientModal(true);
+  };
+
+  // Called when the modal is closed (whether adding or editing)
+  const handleCloseModal = () => {
+    setShowPatientModal(false);
+    setEditingPatientIndex(null);
+  };
+
   return (
     <>
       <h2 className="text-xl font-semibold mb-6">Operation log</h2>
@@ -106,6 +146,73 @@ export const StepOperationLog: FC<OperationLogProps> = ({
           />
         </div>
       </div>
+      <hr className="my-8" />
+      {/* List existing patients */}
+      <div className="mb-4">
+        <h3 className="font-bold text-lg mb-2">Patients</h3>
+        {data.patients.length === 0 ? (
+          <p className="text-sm text-gray-600">No patients added yet.</p>
+        ) : (
+          <ul className="space-y-2">
+            {data.patients.map((p, idx) => (
+              <li key={idx} className="border p-2 rounded">
+                <div className="font-semibold">
+                  {p.name} {p.firstName} (b. {p.birthdate})
+                </div>
+                <div className="text-sm text-gray-700">Gender: {p.gender}</div>
+                <div className="text-sm text-gray-700">
+                  Address: {p.address}, {p.postalCode} {p.city}
+                </div>
+                <div className="text-sm text-gray-700">
+                  Insurance: {p.insuranceNumber}
+                </div>
+                <div className="text-sm text-gray-700">AHV: {p.ahvNumber}</div>
+                <div className="flex gap-2 mt-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => handleEditClick(idx)}
+                    icon={<FiEdit className="h-4 w-4" />}
+                  />
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => handleDeletePatient(idx)}
+                    icon={<FaRegTrashCan className="h-4 w-4" />}
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <Button
+        type="button"
+        onClick={() => {
+          setEditingPatientIndex(null);
+          setShowPatientModal(true);
+        }}
+      >
+        Add Patient
+      </Button>
+      {showPatientModal && (
+        <AddPatientModal
+          onClose={handleCloseModal}
+          // If editing, pass the existing patient data + an onUpdate callback
+          editingPatient={
+            editingPatientIndex !== null
+              ? data.patients[editingPatientIndex]
+              : null
+          }
+          onAddPatient={handleAddPatient}
+          onUpdatePatient={
+            editingPatientIndex !== null
+              ? (updated: Patient) =>
+                  handleUpdatePatient(editingPatientIndex, updated)
+              : undefined
+          }
+        />
+      )}
     </>
   );
 };

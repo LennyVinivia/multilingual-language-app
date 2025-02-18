@@ -7,6 +7,20 @@ import { StepOperationLog } from "./steps/StepOperatingLog";
 import { StepOperatingTime } from "./steps/StepOperatingTime";
 import { StepDocuments } from "./steps/StepDocuments";
 
+export type Patient = {
+  name: string;
+  firstName: string;
+  birthdate: string;
+  gender: "M" | "W" | "";
+  nationality: string;
+  address: string;
+  postalCode: string;
+  city: string;
+  insuranceNumber: string;
+  ahvNumber: string;
+  delikt?: string;
+};
+
 export type ProjectData = {
   title: string;
   call: string;
@@ -32,6 +46,7 @@ export type ProjectData = {
   idBackImage?: string | null;
   insuranceFrontImage?: string | null;
   insuranceBackImage: string | null;
+  patients: Patient[];
 };
 
 export default function CreateProjectPage() {
@@ -62,6 +77,7 @@ export default function CreateProjectPage() {
     idBackImage: null,
     insuranceFrontImage: null,
     insuranceBackImage: null,
+    patients: [],
   });
 
   const [currentStep, setCurrentStep] = useState(1);

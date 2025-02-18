@@ -27,9 +27,9 @@ export default function RootLayout({ children }: LayoutProps) {
         <main className="h-full w-full">{children}</main>
 
         {/* Footer (common across all pages) */}
-        <footer className="absolute bottom-0 left-0 p-4">
+        {/*<footer className="absolute bottom-0 left-0 p-4">
           <p className="text-sm">© All copyrights reserved 2024</p>
-        </footer>
+        </footer>*/}
       </body>
     </html>
   );
