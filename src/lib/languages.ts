@@ -11,3 +11,11 @@ export async function getGermanLanguage() {
     },
   });
 }
+
+export async function getLanguageByName(language: string) {
+  return db.languages.findFirst({
+    where: {
+      name: language,
+    },
+  });
+}
