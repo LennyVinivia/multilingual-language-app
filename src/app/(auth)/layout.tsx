@@ -1,20 +1,15 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import placeholder from "../../public/img/placeholder.png"; // adjust the path if needed
+import placeholder from "@/public/img/placeholder.png";
+import "@/app/globals.css";
 
-type AuthLayoutProps = {
-  children: ReactNode;
-};
-
-export default function AuthLayout({ children }: AuthLayoutProps) {
+export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex h-full items-center justify-center">
       <div className="w-full flex h-full gap-6">
-        {/* Left Column: Form content */}
         <div className="w-full p-16 flex flex-col justify-center gap-4">
           {children}
         </div>
-        {/* Right Column: Image */}
         <div className="w-full relative">
           <Image
             src={placeholder}

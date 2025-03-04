@@ -6,6 +6,7 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { schema } from "@/lib/schema";
+import bcrypt from "bcrypt";
 
 const adapter = PrismaAdapter(db);
 
@@ -20,15 +21,22 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       authorize: async (credentials) => {
         const validatedCredentials = schema.parse(credentials);
 
-        const user = await db.user.findFirst({
+        const user = await db.user.findUnique({
           where: {
             email: validatedCredentials.email,
-            password: validatedCredentials.password,
           },
         });
 
-        if (!user) {
+        if (!user || !user.password) {
           throw new Error("Invalid credentials.");
+        }
+
+        const isValid = await bcrypt.compare(
+          validatedCredentials.password,
+          user.password
+        );
+        if (!isValid) {
+          throw new Error("Invalid password.");
         }
 
         return user;

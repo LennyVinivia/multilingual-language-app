@@ -4,17 +4,19 @@ import { executeAction } from "@/lib/executeAction";
 import { auth, signIn } from "@/lib/auth";
 import { Checkbox } from "@/components/ui/checkbox";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 const Page = async () => {
   const session = await auth();
   if (session) redirect("/");
   return (
     <div className="w-5/6 m-auto">
-      <h1 className="text-2xl font-bold mb-4">Welcome to AdiMed</h1>
-      <span className="text-[#667085]">
+      <h1 className="text-2xl font-bold mb-4 text-white">
+        Welcome to Multilingual
+      </h1>
+      <span className="text-[#ACB1BC]">
         Welcome back! Please enter your details
       </span>
-
       <form
         className="space-y-4 w-full"
         action={async (formData: FormData) => {
@@ -45,7 +47,7 @@ const Page = async () => {
         <div className="flex justify-between items-center">
           <Checkbox />
           <div>
-            <span className="text-[#667085] hover:text-black cursor-pointer">
+            <span className="text-[#ACB1BC] hover:text-black cursor-pointer">
               Forgot password
             </span>
           </div>
@@ -55,15 +57,16 @@ const Page = async () => {
           Sign In
         </Button>
       </form>
-
-      {/*<div className="text-center">
-        <Button asChild variant="link">
-          <Link className="text-[#667085]" href="/sign-up">
-            Don&apos;t have an account?{" "}
-            <span className="text-[#344054]">Sign up</span>
+      <div className="text-center">
+        <Button variant="link">
+          <Link className="text-[#ACB1BC]" href="/sign-up">
+            <span>
+              Dont have an account?
+              <span className="text-[#344054]"> Sign up</span>
+            </span>
           </Link>
         </Button>
-      </div>*/}
+      </div>
     </div>
   );
 };

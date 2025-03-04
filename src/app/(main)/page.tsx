@@ -1,6 +1,6 @@
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import CreateProjectPage from "@/components/create-project/CreateProjectPage";
+import HomepageContent from "@/components/HomepageContent";
 
 const Page = async () => {
   const session = await auth();
@@ -8,7 +8,7 @@ const Page = async () => {
     redirect("/sign-in");
   }
 
-  return <CreateProjectPage />;
+  return <HomepageContent />;
 };
 
 export default Page;

@@ -16,7 +16,9 @@ const Checkbox = React.forwardRef<
         ref={ref}
         {...props}
       />
-      <span className="text-muted-foreground">Remember for 30 days</span>
+      <span className="text-muted-foreground text-[#ACB1BC]">
+        Remember for 30 days
+      </span>
     </label>
   );
 });

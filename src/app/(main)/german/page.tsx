@@ -1,6 +1,6 @@
+import GermanPageContent from "@/components/GermanPageContent";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import ProjectsPageContent from "@/components/ProjectsPage";
 
 const Page = async () => {
   const session = await auth();
@@ -8,7 +8,7 @@ const Page = async () => {
     redirect("/sign-in");
   }
 
-  return <ProjectsPageContent />;
+  return <GermanPageContent />;
 };
 
 export default Page;
