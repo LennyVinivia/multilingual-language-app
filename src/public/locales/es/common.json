@@ -1,0 +1,18 @@
+{
+  "homepage": {
+    "title": "Bienvenido al lugar donde puedes mejorar tus habilidades lingüísticas.",
+    "languageSentence": "Adelante, empieza a aprender uno de los siguientes idiomas.",
+    "german": "Alemán",
+    "english": "Inglés",
+    "spanish": "Español",
+    "italian": "Italiano"
+  },
+  "navbar": {
+    "german": "Alemán",
+    "english": "Inglés",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "home": "Inicio",
+    "profile": "Perfil"
+  }
+}

@@ -6,6 +6,8 @@ import italy from "../public/img/italy.png";
 import spain from "../public/img/spain.png";
 import Image from "next/image";
 import LanguageCard from "./LanguageCard";
+import { useI18n } from "@/contexts/I18nContext";
+import { getTranslation } from "@/lib/translations";
 
 type Language = {
   name: string;
@@ -37,11 +39,12 @@ const languages: Language[] = [
 ];
 
 export default function HomepageContent() {
+  const { locale } = useI18n();
   return (
     <div className="space-y-8">
       <section>
         <h1 className="text-3xl font-bold mb-8">
-          Welcome to the place where you can improve your language skills.
+          {getTranslation(locale, "homepage.title")}
         </h1>
         <p className="text-gray-300 leading-relaxed">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -59,13 +62,16 @@ export default function HomepageContent() {
 
       <section>
         <h2 className="text-xl font-semibold mb-12 text-center pb-2 border-b-2 border-[#6A6A6A]">
-          Go Ahead and start learning one of the following languages
+          {getTranslation(locale, "homepage.languageSentence")}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {languages.map((lang) => (
             <LanguageCard
               key={lang.name}
-              name={lang.name}
+              name={getTranslation(
+                locale,
+                `homepage.${lang.name.toLocaleLowerCase()}`
+              )}
               icon={lang.icon}
               href={lang.href}
             />

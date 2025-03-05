@@ -1,0 +1,18 @@
+{
+  "homepage": {
+    "title": "Willkommen an dem Ort, an dem du deine Sprachkenntnisse verbessern kannst.",
+    "languageSentence": "Leg einfach los und beginne, eine der folgenden Sprachen zu lernen.",
+    "german": "Deutsch",
+    "english": "Englisch",
+    "spanish": "Spanisch",
+    "italian": "Italienisch"
+  },
+  "navbar": {
+    "german": "Deutsch",
+    "english": "Englisch",
+    "spanish": "Spanisch",
+    "italian": "Italienisch",
+    "home": "Startseite",
+    "profile": "Profil"
+  }
+}

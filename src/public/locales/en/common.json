@@ -1,0 +1,18 @@
+{
+  "homepage": {
+    "title": "Welcome to the place where you can improve your language skills.",
+    "languageSentence": "Go Ahead and start learning one of the following languages",
+    "german": "German",
+    "english": "English",
+    "spanish": "Spanish",
+    "italian": "Italian"
+  },
+  "navbar": {
+    "german": "German",
+    "english": "English",
+    "spanish": "Spanish",
+    "italian": "Italian",
+    "home": "Home",
+    "profile": "Profile"
+  }
+}

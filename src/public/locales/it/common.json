@@ -1,0 +1,18 @@
+{
+  "homepage": {
+    "title": "Benvenuto nel luogo in cui puoi migliorare le tue competenze linguistiche.",
+    "languageSentence": "Vai avanti e inizia a studiare una delle seguenti lingue.",
+    "german": "Tedesco",
+    "english": "Inglese",
+    "spanish": "Spagnolo",
+    "italian": "Italiano"
+  },
+  "navbar": {
+    "german": "Tedesco",
+    "english": "Inglese",
+    "spanish": "Spagnolo",
+    "italian": "Italiano",
+    "home": "Home",
+    "profile": "Profilo"
+  }
+}
