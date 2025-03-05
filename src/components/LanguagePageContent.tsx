@@ -12,88 +12,88 @@ const exercisesByLanguage: Record<string, Exercise[]> = {
   german: [
     {
       name: "Fill in the Blank",
-      description: "This is a description",
+      description: "Complete sentences by filling in the missing words.",
       href: "/german/exercises/fill-in-the-blank",
     },
     {
       name: "Multiple Choice",
-      description: "This is a description",
+      description: "Choose the correct answer from multiple options.",
       href: "/german/exercises/multiple-choice",
     },
     {
       name: "Idioms",
-      description: "This is a description",
+      description: "Match expressions with their meanings.",
       href: "/german/exercises/idioms",
     },
     {
       name: "Translations",
-      description: "This is a description",
+      description: "Match the words to its translation.",
       href: "/german/exercises/translations",
     },
   ],
   english: [
     {
       name: "Fill in the Blank",
-      description: "This is a description",
+      description: "Complete sentences by filling in the missing words.",
       href: "/english/exercises/fill-in-the-blank",
     },
     {
       name: "Multiple Choice",
-      description: "This is a description",
+      description: "Choose the correct answer from multiple options.",
       href: "/english/exercises/multiple-choice",
     },
     {
       name: "Idioms",
-      description: "This is a description",
+      description: "Match expressions with their meanings.",
       href: "/english/exercises/idioms",
     },
     {
       name: "Translations",
-      description: "This is a description",
+      description: "Match the words to its translation.",
       href: "/english/exercises/translations",
     },
   ],
   spanish: [
     {
       name: "Fill in the Blank",
-      description: "This is a description",
+      description: "Complete sentences by filling in the missing words.",
       href: "/spanish/exercises/fill-in-the-blank",
     },
     {
       name: "Multiple Choice",
-      description: "This is a description",
+      description: "Choose the correct answer from multiple options.",
       href: "/spanish/exercises/multiple-choice",
     },
     {
       name: "Idioms",
-      description: "This is a description",
+      description: "Match expressions with their meanings.",
       href: "/spanish/exercises/idioms",
     },
     {
       name: "Translations",
-      description: "This is a description",
+      description: "Match the words to its translation.",
       href: "/spanish/exercises/translations",
     },
   ],
   italian: [
     {
       name: "Fill in the Blank",
-      description: "This is a description",
+      description: "Complete sentences by filling in the missing words.",
       href: "/italian/exercises/fill-in-the-blank",
     },
     {
       name: "Multiple Choice",
-      description: "This is a description",
+      description: "Choose the correct answer from multiple options.",
       href: "/italian/exercises/multiple-choice",
     },
     {
       name: "Idioms",
-      description: "This is a description",
+      description: "Match expressions with their meanings.",
       href: "/italian/exercises/idioms",
     },
     {
       name: "Translations",
-      description: "This is a description",
+      description: "Match the words to its translation.",
       href: "/italian/exercises/translations",
     },
   ],

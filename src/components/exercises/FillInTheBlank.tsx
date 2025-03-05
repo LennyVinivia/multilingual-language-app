@@ -14,11 +14,11 @@ type Exercise = {
   correct_answer: string;
 };
 
-type FillInTheGapProps = {
+type FillInTheBlankProps = {
   exercises: Exercise[];
 };
 
-export default function FillInTheGap({ exercises }: FillInTheGapProps) {
+export default function FillInTheBlank({ exercises }: FillInTheBlankProps) {
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);

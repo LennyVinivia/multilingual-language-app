@@ -1,4 +1,4 @@
-import FillInTheGap from "@/components/exercises/FillInTheGap";
+import FillInTheGap from "@/components/exercises/FillInTheBlank";
 import MultipleChoice from "@/components/exercises/MultipleChoice";
 import Idioms from "@/components/exercises/Idioms";
 import Translations from "@/components/exercises/Translations";
@@ -40,8 +40,10 @@ export default async function ExercisePage({
       {formattedExerciseType === "fillintheblank" && (
         <FillInTheGap exercises={exercises} />
       )}
-      {formattedExerciseType === "multiplechoice" && <MultipleChoice />}
-      {formattedExerciseType === "idioms" && <Idioms />}
+      {formattedExerciseType === "multiplechoice" && (
+        <MultipleChoice exercises={exercises} />
+      )}
+      {formattedExerciseType === "idioms" && <Idioms exercises={exercises} />}
       {formattedExerciseType === "translations" && <Translations />}
       {!["fillintheblank", "multiplechoice", "idioms", "translations"].includes(
         formattedExerciseType
