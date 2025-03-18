@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import json
 
-mongo_uri = "mongodb+srv://lennyruprechthtc:Secure1234@cluster0.stm3k.mongodb.net/"  # Adjust if necessary
+mongo_uri = "mongodb+srv://lennyruprechthtc:PW@cluster0.stm3k.mongodb.net/"
 database_name = "multilingual-language"
 collection_name = "words"
 

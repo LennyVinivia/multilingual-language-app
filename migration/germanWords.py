@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 old_db_uri = "mongodb+srv://mrexitorg:3VEa7SHwClxEnWTK@cluster0.j1q4tw9.mongodb.net/German?retryWrites=true&w=majority"
-new_db_uri = "mongodb+srv://lennyruprechthtc:Secure1234@cluster0.stm3k.mongodb.net/"
+new_db_uri = "mongodb+srv://lennyruprechthtc:PW@cluster0.stm3k.mongodb.net/"
 
 old_db_name = "German"
 new_db_name = "multilingual-language"

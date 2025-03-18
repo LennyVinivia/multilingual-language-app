@@ -1,7 +1,7 @@
 import csv
 from pymongo import MongoClient
 
-db_uri = "mongodb+srv://lennyruprechthtc:Secure1234@cluster0.stm3k.mongodb.net/"
+db_uri = "mongodb+srv://lennyruprechthtc:PW@cluster0.stm3k.mongodb.net/"
 client = MongoClient(db_uri)
 
 database = client["multilingual-language"]
