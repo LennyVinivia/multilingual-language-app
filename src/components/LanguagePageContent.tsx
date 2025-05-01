@@ -11,18 +11,18 @@ type Exercise = {
 const exercisesByLanguage: Record<string, Exercise[]> = {
   german: [
     {
+      name: "Vocabulary",
+      description: "Learn new words to expand your vocabulary.",
+      href: "/german/exercises/vocabulary",
+    },
+    {
       name: "Fill in the Blank",
       description: "Complete sentences by filling in the missing words.",
       href: "/german/exercises/fill-in-the-blank",
     },
     {
-      name: "Multiple Choice",
-      description: "Choose the correct answer from multiple options.",
-      href: "/german/exercises/multiple-choice",
-    },
-    {
       name: "Idioms",
-      description: "Match expressions with their meanings.",
+      description: "Choose the correct answer from multiple options.",
       href: "/german/exercises/idioms",
     },
     {
@@ -33,19 +33,9 @@ const exercisesByLanguage: Record<string, Exercise[]> = {
   ],
   english: [
     {
-      name: "Fill in the Blank",
-      description: "Complete sentences by filling in the missing words.",
-      href: "/english/exercises/fill-in-the-blank",
-    },
-    {
-      name: "Multiple Choice",
-      description: "Choose the correct answer from multiple options.",
-      href: "/english/exercises/multiple-choice",
-    },
-    {
-      name: "Idioms",
-      description: "Match expressions with their meanings.",
-      href: "/english/exercises/idioms",
+      name: "Vocabulary",
+      description: "Learn new words to expand your vocabulary.",
+      href: "/english/exercises/vocabulary",
     },
     {
       name: "Translations",
@@ -55,14 +45,14 @@ const exercisesByLanguage: Record<string, Exercise[]> = {
   ],
   spanish: [
     {
-      name: "Fill in the Blank",
-      description: "Complete sentences by filling in the missing words.",
-      href: "/spanish/exercises/fill-in-the-blank",
+      name: "Vocabulary",
+      description: "Learn new words to expand your vocabulary.",
+      href: "/spanish/exercises/vocabulary",
     },
     {
-      name: "Multiple Choice",
-      description: "Choose the correct answer from multiple options.",
-      href: "/spanish/exercises/multiple-choice",
+      name: "Accents",
+      description: "Learn Accents to expand your knowledge of spanish.",
+      href: "/spanish/exercises/accents",
     },
     {
       name: "Idioms",
@@ -77,24 +67,31 @@ const exercisesByLanguage: Record<string, Exercise[]> = {
   ],
   italian: [
     {
-      name: "Fill in the Blank",
-      description: "Complete sentences by filling in the missing words.",
-      href: "/italian/exercises/fill-in-the-blank",
-    },
-    {
-      name: "Multiple Choice",
-      description: "Choose the correct answer from multiple options.",
-      href: "/italian/exercises/multiple-choice",
-    },
-    {
-      name: "Idioms",
-      description: "Match expressions with their meanings.",
-      href: "/italian/exercises/idioms",
+      name: "Vocabulary",
+      description: "Learn new words to expand your vocabulary.",
+      href: "/italian/exercises/vocabulary",
     },
     {
       name: "Translations",
       description: "Match the words to its translation.",
       href: "/italian/exercises/translations",
+    },
+    {
+      name: "Proverbs",
+      description: "Learn Proverbs to expand your knowledge of italian.",
+      href: "/italian/exercises/proverbs",
+    },
+    {
+      name: "Conjugation",
+      description: "Try to conjugate italian verbs.",
+      href: "/italian/exercises/conjugation",
+    },
+  ],
+  french: [
+    {
+      name: "Idioms",
+      description: "Match expressions with their meanings.",
+      href: "/french/exercises/idioms",
     },
   ],
 };

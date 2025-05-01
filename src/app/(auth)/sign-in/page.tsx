@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 import { LabeledInput } from "@/components/ui/labeled-input";
 import { executeAction } from "@/lib/executeAction";
 import { auth, signIn } from "@/lib/auth";
-import { Checkbox } from "@/components/ui/checkbox";
+//import { Checkbox } from "@/components/ui/checkbox";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import OAuthButton from "@/components/ui/oAuthButton";
 
 const Page = async () => {
   const session = await auth();
@@ -14,11 +15,20 @@ const Page = async () => {
       <h1 className="text-2xl font-bold mb-4 text-white">
         Welcome to Multilingual
       </h1>
+      <OAuthButton className="my-6" provider="google" label="Google" />
+      <OAuthButton className="my-6" provider="github" label="GitHub" />
+      <div className="flex items-center my-6">
+        <div className="flex-grow border-t border-[#6A6A6A]"></div>
+        <span className="px-3 text-[#ACB1BC] text-sm">
+          Or with email and password
+        </span>
+        <div className="flex-grow border-t border-[#6A6A6A]"></div>
+      </div>
       <span className="text-[#ACB1BC]">
         Welcome back! Please enter your details
       </span>
       <form
-        className="space-y-4 w-full"
+        className="space-y-4 w-full mt-2"
         action={async (formData: FormData) => {
           "use server";
           await executeAction({
@@ -44,16 +54,10 @@ const Page = async () => {
           required
           autoComplete="current-password"
         />
-        <div className="flex justify-between items-center">
-          <Checkbox />
-          <div>
-            <span className="text-[#ACB1BC] hover:text-black cursor-pointer">
-              Forgot password
-            </span>
-          </div>
-        </div>
-
-        <Button className="w-full bg-[#475467]" type="submit">
+        <Button
+          className="w-full bg-[#475467] hover:bg-[#2a313c]"
+          type="submit"
+        >
           Sign In
         </Button>
       </form>

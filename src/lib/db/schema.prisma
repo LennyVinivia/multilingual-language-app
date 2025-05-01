@@ -3,9 +3,8 @@ generator client {
 }
 
 datasource db {
-    provider     = "mongodb"
-    url          = "mongodb+srv://lennyruprechthtc:Secure1234@cluster0.stm3k.mongodb.net/multilingual-language?retryWrites=true&w=majority"
-    relationMode = "prisma"
+    provider = "mongodb"
+    url      = env("NEW_DATABASE_URL")
 }
 
 type CategoriesSubcategories {
@@ -15,16 +14,56 @@ type CategoriesSubcategories {
 }
 
 type ExercisesMetadata {
-    date DateTime? @db.Date
+    /// Could not determine type: the field only had null or empty values in the sample set.
+    date Json?
     tags String[]
 }
 
+type ProverbsTranslations {
+    en String?
+    fr String?
+}
+
 type WordsAdditionalInfo {
-    definition String
-    phonetics  String
-    prefix     String
-    root       String
-    structure  String
+    artikel_ref      String?
+    content          String?
+    counter_word     String?
+    counter_words    String?
+    cumul_word       String?
+    date_entry_word  String?
+    date_source      String?
+    definition       String?
+    gramm            String?
+    nature_ref       String?
+    phonetics        String?
+    prefix           String?
+    random_number    String?
+    root             String?
+    source           String?
+    source_ref       String?
+    structure        String?
+    title_of_article String?
+}
+
+type WordsTranslations {
+    language_id String @db.ObjectId
+    translation String
+}
+
+model Account {
+    id                String  @id @default(auto()) @map("_id") @db.ObjectId
+    access_token      String
+    expires_at        BigInt?
+    id_token          String?
+    provider          String
+    providerAccountId String
+    scope             String
+    token_type        String
+    type              String
+    userId            String  @db.ObjectId
+    User              User    @relation(fields: [userId], references: [id])
+
+    @@unique([provider, providerAccountId])
 }
 
 model Authenticator {
@@ -35,44 +74,26 @@ model Authenticator {
 
 model Session {
     id           String   @id @default(auto()) @map("_id") @db.ObjectId
+    expires      DateTime @db.Date
     sessionToken String   @unique
     userId       String   @db.ObjectId
-    expires      DateTime
 
-    // Relation
     user User @relation(fields: [userId], references: [id])
 }
 
 model User {
-    id        String  @id @default(auto()) @map("_id") @db.ObjectId
-    email     String  @unique
-    username  String  @unique
-    firstname String?
-    lastname  String?
-    password  String?
-
-    Session Session[]
-
-    Account Account[]
-}
-
-model Account {
-    id                String  @id @default(auto()) @map("_id") @db.ObjectId
-    userId            String  @db.ObjectId
-    provider          String
-    providerAccountId String
-    type              String
-    access_token      String?
-    refresh_token     String?
-    expires_at        Int?
-    token_type        String?
-    scope             String?
-    id_token          String?
-    session_state     String?
-
-    user User @relation(fields: [userId], references: [id])
-
-    @@unique([provider, providerAccountId])
+    id            String    @id @default(auto()) @map("_id") @db.ObjectId
+    email         String    @unique
+    /// Could not determine type: the field only had null or empty values in the sample set.
+    emailVerified Json?
+    firstname     String
+    image         String?
+    lastname      String
+    name          String?
+    password      String?
+    username      String    @unique
+    Session       Session[]
+    Account       Account[]
 }
 
 model VerificationToken {
@@ -80,6 +101,26 @@ model VerificationToken {
     identifier String
     token      String   @unique
     expires    DateTime
+}
+
+model WordProgress {
+    id          String   @id @default(auto()) @map("_id") @db.ObjectId
+    language_id String   @db.ObjectId
+    status      BigInt
+    updated_at  DateTime @db.Date
+    user_id     String   @db.ObjectId
+    word_id     String   @db.ObjectId
+
+    @@unique([user_id, word_id])
+}
+
+model accents {
+    id          String  @id @default(auto()) @map("_id") @db.ObjectId
+    accented    String
+    example     String?
+    language_id String  @db.ObjectId
+    rule_code   String
+    unaccented  String
 }
 
 model categories {
@@ -91,12 +132,24 @@ model categories {
     type          String
 }
 
+model conjugations {
+    id          String   @id @default(auto()) @map("_id") @db.ObjectId
+    counter     Int
+    cumul       Int
+    date_entry  DateTime @db.Date
+    forms       String[]
+    language_id String   @db.ObjectId
+    tense       String
+    verb_id     String
+}
+
 model exercises {
     id             String             @id @default(auto()) @map("_id") @db.ObjectId
-    category_id    String             @db.ObjectId
+    category_id    String?            @db.ObjectId
     correct_answer String
     example        String?
     examples       String[]
+    exerciseType   String?
     exercise_type  String
     explanation    String?
     language_id    String             @db.ObjectId
@@ -109,20 +162,107 @@ model exercises {
     subcategory_id Json?
 }
 
+model idioms {
+    id             String             @id @default(auto()) @map("_id") @db.ObjectId
+    category_id    String?            @db.ObjectId
+    correct_answer String
+    example        String?
+    examples       String[]
+    exerciseType   String?
+    exercise_type  String
+    explanation    String?
+    language_id    String             @db.ObjectId
+    metadata       ExercisesMetadata?
+    options        String[]
+    question       String
+    related_verb   String?
+    source         String?
+    /// Could not determine type: the field only had null or empty values in the sample set.
+    subcategory_id Json?
+}
+
+model fillintheblank {
+    id             String             @id @default(auto()) @map("_id") @db.ObjectId
+    category_id    String?            @db.ObjectId
+    correct_answer String
+    example        String?
+    examples       String[]
+    exerciseType   String?
+    exercise_type  String
+    explanation    String?
+    language_id    String             @db.ObjectId
+    metadata       ExercisesMetadata?
+    options        String[]
+    question       String
+    related_verb   String?
+    source         String?
+    /// Could not determine type: the field only had null or empty values in the sample set.
+    subcategory_id Json?
+}
+
+model jokes {
+    id            String    @id @default(auto()) @map("_id") @db.ObjectId
+    counter       Int
+    cumul         Int
+    date_entry    DateTime? @db.Date
+    joke          String
+    keywords      String[]
+    language_id   String    @db.ObjectId
+    /// Multiple data types found: Float: 50%, Int: 50% out of 382 sampled entries
+    random_number Json
+    rf_language   String?
+    rf_source     String
+    source        String?
+}
+
 model languages {
     id   String @id @default(auto()) @map("_id") @db.ObjectId
     name String
 }
 
+model proverbs {
+    id            String               @id @default(auto()) @map("_id") @db.ObjectId
+    counter       Int
+    cumul         Int
+    date_entry    DateTime             @db.Date
+    definition    String
+    keywords      String[]
+    language_id   String               @db.ObjectId
+    proverb       String
+    random_number Int
+    tema          String?
+    translations  ProverbsTranslations
+}
+
+model sentences {
+    id          String @id @default(auto()) @map("_id") @db.ObjectId
+    language_id String @db.ObjectId
+    sentence    String
+    word_id     String @db.ObjectId
+}
+
 model words {
-    id              String              @id @default(auto()) @map("_id") @db.ObjectId
-    additional_info WordsAdditionalInfo
-    category_id     String              @db.ObjectId
+    id              String               @id @default(auto()) @map("_id") @db.ObjectId
+    additional_info WordsAdditionalInfo?
+    category_id     String?              @db.ObjectId
+    counter_words   String?
+    cumul_word      String?
+    date_entry_word String?
+    definition      String?
     examples        String[]
-    language_id     String              @db.ObjectId
-    subcategory_id  String?             @db.ObjectId
-    /// Could not determine type: the field only had null or empty values in the sample set.
-    translations    Json?
-    type            String
+    front_text      String
+    language_id     String               @db.ObjectId
+    phonetics       String?
+    random_number   String?
+    structure       String?
+    subcategory_id  String?              @db.ObjectId
+    translations    TranslationEntry[]
+    type            String?
+    var1            String?
     word            String
+}
+
+type TranslationEntry {
+    language_id String  @db.ObjectId
+    translation String?
 }

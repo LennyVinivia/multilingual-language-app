@@ -4,6 +4,7 @@ import germany from "../public/img/germany.png";
 import unitedKingdom from "../public/img/united-kingdom.png";
 import italy from "../public/img/italy.png";
 import spain from "../public/img/spain.png";
+import france from "../public/img/france.png";
 import Image from "next/image";
 import LanguageCard from "./LanguageCard";
 import { useI18n } from "@/contexts/I18nContext";
@@ -36,6 +37,11 @@ const languages: Language[] = [
     icon: <Image src={italy} alt="Italy Flag" width={64} height={64} />,
     href: "/italian",
   },
+  {
+    name: "French",
+    icon: <Image src={france} alt="French Flag" width={64} height={64} />,
+    href: "/french",
+  },
 ];
 
 export default function HomepageContent() {
@@ -47,16 +53,7 @@ export default function HomepageContent() {
           {getTranslation(locale, "homepage.title")}
         </h1>
         <p className="text-gray-300 leading-relaxed">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-          aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-          dolores et ea rebum
+          {getTranslation(locale, "homepage.description")}
         </p>
       </section>
 

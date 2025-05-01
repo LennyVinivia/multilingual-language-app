@@ -3,16 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoHomeOutline } from "react-icons/io5";
-import { CiUser } from "react-icons/ci";
+import { CiLogout, CiUser } from "react-icons/ci";
 import germany from "../public/img/germany.png";
 import unitedKingdom from "../public/img/united-kingdom.png";
 import italy from "../public/img/italy.png";
 import spain from "../public/img/spain.png";
+import france from "../public/img/france.png";
 import Image from "next/image";
 import { useI18n } from "@/contexts/I18nContext";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { getTranslation } from "@/lib/translations";
+import { setCookie } from "cookies-next";
+import { signOut } from "next-auth/react";
+import { TbJoker } from "react-icons/tb";
 
 type NavItem = {
   label: string;
@@ -42,6 +46,16 @@ const navItems: NavItem[] = [
     icon: <Image src={italy} alt="Italy Flag" width={24} height={24} />,
     href: "/italian",
   },
+  {
+    label: "French",
+    icon: <Image src={france} alt="French Flag" width={24} height={24} />,
+    href: "/french",
+  },
+  {
+    label: "Jokes",
+    icon: <TbJoker size={24} />,
+    href: "/jokes",
+  },
   { label: "Profile", icon: <CiUser size={24} />, href: "/profile" },
 ];
 
@@ -50,6 +64,7 @@ const languageOptions = [
   { name: "German", code: "de", flag: germany },
   { name: "Spanish", code: "es", flag: spain },
   { name: "Italian", code: "it", flag: italy },
+  { name: "French", code: "fr", flag: france },
 ];
 
 export default function NavBar() {
@@ -59,6 +74,16 @@ export default function NavBar() {
 
   const currentLang =
     languageOptions.find((lang) => lang.code === locale) || languageOptions[0];
+
+  const handleLocaleChange = (langCode: string) => {
+    setCookie("locale", langCode, { path: "/" });
+    setLocale(langCode);
+    setShowDropdown(false);
+  };
+
+  const handleSignOut = async () => {
+    await signOut();
+  };
 
   return (
     <nav className="h-screen w-64 text-gray-200 flex flex-col border-r-2 border-[#6A6A6A]">
@@ -82,10 +107,7 @@ export default function NavBar() {
               {languageOptions.map((lang) => (
                 <Button
                   key={lang.code}
-                  onClick={() => {
-                    setLocale(lang.code);
-                    setShowDropdown(false);
-                  }}
+                  onClick={() => handleLocaleChange(lang.code)}
                   className="flex items-center gap-2 w-full px-4 py-2 bg-[#141F24] text-white hover:font-semibold hover:bg-gray-800"
                 >
                   <Image
@@ -110,7 +132,7 @@ export default function NavBar() {
                 href={item.href}
                 className={`
       flex items-center gap-4
-       rounded-md px-2 py-2 
+       rounded-md p-2
       hover:bg-gray-800
       ${isActive ? "bg-gray-800 font-semibold border-2 border-[#31639C]" : ""}
     `}
@@ -127,6 +149,15 @@ export default function NavBar() {
           );
         })}
       </ul>
+      <div className="p-4">
+        <Button
+          onClick={handleSignOut}
+          className="flex items-center justify-start rounded-md gap-4 p-2 w-full bg-[#141F24] hover:bg-gray-800 text-white text-xl"
+        >
+          <CiLogout size={24} />
+          Logout
+        </Button>
+      </div>
     </nav>
   );
 }

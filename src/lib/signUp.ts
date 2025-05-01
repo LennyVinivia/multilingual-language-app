@@ -1,4 +1,3 @@
-// signUp.ts
 import db from "./db";
 import { executeAction } from "./executeAction";
 import { userSignupSchema } from "./schema";

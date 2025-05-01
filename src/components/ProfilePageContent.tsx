@@ -5,28 +5,31 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { LabeledInput } from "@/components/ui/labeled-input";
-import Link from "next/link";
+import { UserProfile } from "@/lib/user";
 
-export default function SignupForm() {
+type ProfilePageContentProps = {
+  userProfile: UserProfile;
+};
+
+export default function ProfilePageContent({
+  userProfile,
+}: ProfilePageContentProps) {
   const router = useRouter();
-
   const [errors, setErrors] = useState<any>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const validateForm = (formData: FormData) => {
     const newErrors: any = {};
+
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
     const confirmPassword = formData.get("confirmPassword") as string;
-
-    if (password !== confirmPassword) {
-      newErrors.password = "Passwords do not match.";
-      newErrors.confirmPassword = "Passwords do not match.";
-    }
-
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if (!emailPattern.test(email)) {
       newErrors.email = "Please enter a valid email address.";
+    }
+    if (password && password !== confirmPassword) {
+      newErrors.password = "Passwords do not match.";
+      newErrors.confirmPassword = "Passwords do not match.";
     }
 
     return newErrors;
@@ -34,117 +37,95 @@ export default function SignupForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("DATABASE_URL:", process.env.DATABASE_URL);
     setIsSubmitting(true);
     setErrors({});
 
     const formData = new FormData(e.currentTarget);
-
     const validationErrors = validateForm(formData);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       setIsSubmitting(false);
       return;
     }
-
-    const res = await fetch("/api/signup", {
-      method: "POST",
+    const res = await fetch("/api/profile", {
+      method: "PUT",
       body: formData,
     });
     const data = await res.json();
 
     if (data.success) {
-      router.push("/sign-in");
+      router.refresh();
     } else {
       setErrors({
-        general: data.error || "An error occurred. Please try again.",
+        general: data.error || "An error occurred updating your profile.",
       });
     }
-
     setIsSubmitting(false);
   };
 
   return (
     <div className="w-5/6 m-auto">
-      <h1 className="text-2xl font-bold mb-2">Enter your Data</h1>
-      <span className="text-[#ACB1BC]">
-        Complete this step to access the platform
-      </span>
+      <h1 className="text-2xl font-bold mb-2">Your Profile</h1>
+      <span className="text-[#ACB1BC]">Update your personal details here</span>
 
       <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
         <LabeledInput
           label="First Name"
           name="firstname"
-          placeholder="Max"
           type="text"
           required
-          autoComplete="given-name"
-          error={errors.firstname}
+          defaultValue={userProfile.firstname || ""}
         />
         <LabeledInput
           label="Last Name"
           name="lastname"
-          placeholder="Mustermann"
           type="text"
           required
-          autoComplete="family-name"
-          error={errors.lastname}
+          defaultValue={userProfile.lastname || ""}
         />
         <LabeledInput
           label="Email Address"
           name="email"
-          placeholder="max.mustermann@gmail.com"
           type="email"
           required
-          autoComplete="email"
+          defaultValue={userProfile.email}
           error={errors.email}
         />
         <LabeledInput
           label="Username"
           name="username"
-          placeholder="maxmuster"
           type="text"
           required
+          defaultValue={userProfile.username}
           error={errors.username}
         />
         <LabeledInput
-          label="Password"
+          label="New Password"
           name="password"
-          placeholder="Password"
+          placeholder="Enter new password"
           type="password"
-          required
-          autoComplete="new-password"
           error={errors.password}
+          defaultValue=""
         />
         <LabeledInput
           label="Confirm Password"
           name="confirmPassword"
-          placeholder="Confirm password"
+          placeholder="Repeat new password"
           type="password"
-          required
-          autoComplete="new-password"
           error={errors.confirmPassword}
+          defaultValue=""
         />
 
         {errors.general && <p className="text-red-600">{errors.general}</p>}
 
         <Button
-          className="w-full bg-[#475467] hover:bg-[#2a313c]"
+          className="w-full mt-12 bg-[#475467] hover:bg-[#2a313c]"
           type="submit"
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Signing Up..." : "Sign Up"}
+          {isSubmitting ? "Updating..." : "Update Profile"}
         </Button>
       </form>
-
-      <div className="text-center mt-4">
-        <Button variant="link">
-          <Link className="text-[#667085]" href="/sign-in">
-            Already have an account?{" "}
-            <span className="text-[#344054]">Sign in</span>
-          </Link>
-        </Button>
-      </div>
     </div>
   );
 }
