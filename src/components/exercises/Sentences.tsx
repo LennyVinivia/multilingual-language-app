@@ -3,26 +3,33 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import ProgressBar, { ExerciseProgress } from "../ProgressBar";
+import ExerciseInput from "../ui/exerciseInput";
 import { Button } from "../ui/button";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { GoXCircleFill } from "react-icons/go";
 
 type Exercise = {
   id: string;
-  question: string;
-  correct_answer: string;
+  originalSentence: string;
+  blankedSentence: string;
+  correctAnswer: string;
   options: string[];
 };
 
-type MultipleChoiceProps = {
+type SetnenceProps = {
   exercises: Exercise[];
+  learningLanguage: string;
 };
 
-export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
+export default function Sentence({
+  exercises,
+  learningLanguage,
+}: SetnenceProps) {
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [correctAnswer, setCorrectAnswer] = useState<string>("");
+  const [answer, setAnswer] = useState("");
   const [hasChecked, setHasChecked] = useState(false);
 
   const initialStatuses = exercises.map((ex) => ({
@@ -33,30 +40,30 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
     useState<ExerciseProgress[]>(initialStatuses);
 
   const handleCancel = () => {
-    router.push("/german");
+    router.push(`/${learningLanguage.toLowerCase()}`);
   };
 
   const handleCheck = () => {
     if (hasChecked) {
       if (activeIndex < exercises.length - 1) {
         setActiveIndex(activeIndex + 1);
-        setSelectedAnswer(null);
+        setAnswer("");
         setIsCorrect(null);
         setHasChecked(false);
       } else {
         alert("Alle Fragen abgeschlossen!");
-        router.push("/german");
+        router.push(`/${learningLanguage.toLowerCase()}`);
       }
       return;
     }
 
-    if (!selectedAnswer) return;
-
     const currentEx = exercises[activeIndex];
     if (!currentEx) return;
 
-    const correct = currentEx.correct_answer.toLowerCase().trim();
-    const isAnswerCorrect = selectedAnswer.toLowerCase().trim() === correct;
+    const correct = currentEx.correctAnswer.toLowerCase().trim();
+    setCorrectAnswer(correct);
+    const userAnswer = answer.toLowerCase().trim();
+    const isAnswerCorrect = correct === userAnswer;
 
     setExerciseStatuses((prev) =>
       prev.map((item, i) =>
@@ -68,6 +75,13 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
 
     setIsCorrect(isAnswerCorrect);
     setHasChecked(true);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleCheck();
+    }
   };
 
   useEffect(() => {
@@ -83,6 +97,8 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
     return <div>Keine Übungen gefunden.</div>;
   }
 
+  console.log("exercises", exercises);
+
   const buttonLabel = hasChecked ? "Nächste Frage" : "Überprüfen";
 
   return (
@@ -95,25 +111,15 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
         />
       </div>
 
-      <h2 className="text-2xl font-bold mt-16">{currentExercise.question}</h2>
+      <h2 className="text-2xl font-bold mt-16">Fülle die Lücken!</h2>
+      <p className="mt-16">{currentExercise.blankedSentence}</p>
 
-      <div className="mt-6 flex flex-col gap-4">
-        {currentExercise.options.map((option, index) => (
-          <Button
-            key={option}
-            onClick={() => setSelectedAnswer(option)}
-            className={`w-full p-8 rounded-lg text-white text-lg text-wrap font-semibold border-2
-                        ${
-                          selectedAnswer === option
-                            ? "border-[#31639C] bg-gray-800"
-                            : "border-[#6A6A6A] bg-[#141F24]"
-                        } 
-                        hover:bg-gray-800 transition-all`}
-          >
-            {index + 1}. {option}
-          </Button>
-        ))}
-      </div>
+      <ExerciseInput
+        value={answer}
+        onChange={(val) => setAnswer(val)}
+        onKeyDown={handleKeyDown}
+        disabled={hasChecked}
+      />
 
       <div
         className={`mt-12 p-8 flex items-center ${
@@ -134,7 +140,7 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
                   <p className="text-red-500 font-bold">Falsch!</p>
                 </div>
                 <p className="text-red-400 font-semibold">
-                  Korrekte Antwort: {currentExercise.correct_answer}
+                  Korrekte Antwort: {correctAnswer}
                 </p>
               </div>
             )}
@@ -143,7 +149,6 @@ export default function MultipleChoice({ exercises }: MultipleChoiceProps) {
 
         <Button
           onClick={handleCheck}
-          disabled={!selectedAnswer}
           className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md"
         >
           {buttonLabel}
