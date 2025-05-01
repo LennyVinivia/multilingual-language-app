@@ -1,7 +1,7 @@
 import csv
 from pymongo import MongoClient
 
-db_uri = "mongodb+srv://lennyruprechthtc:PW@cluster0.stm3k.mongodb.net/"
+db_uri = "URI"
 client = MongoClient(db_uri)
 
 database = client["multilingual-language"]
@@ -39,7 +39,7 @@ def import_italian_words(csv_path: str):
                 "language_id": italian_language_id,
                 "word": word_text.strip(),
                 "type": row["TypeOfWord"] or "",
-                "sentence": row["Sentence"] or "",
+                "front_text": row["Sentence"] or "",
                 "definition": row["Definition_I"] or "",
                 "additional_info": {
                     "artikel_ref": row["Artikel_ref"] or "",

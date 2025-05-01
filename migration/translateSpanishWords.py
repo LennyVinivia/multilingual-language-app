@@ -1,7 +1,7 @@
 import json
 from pymongo import MongoClient
 
-db_uri = "mongodb+srv://lennyruprechthtc:PW@cluster0.stm3k.mongodb.net/"
+db_uri = "URI"
 client = MongoClient(db_uri)
 
 database = client["multilingual-language"]
@@ -32,7 +32,6 @@ def add_translations(json_file_path):
             print("No 'word' field, skipping:", entry)
             continue
         
-        # Find the document in the 'words' collection with word=word_text
         word_doc = words_collection.find_one({"word": word_text})
         if not word_doc:
             print(f"Could not find word '{word_text}' in the DB. Skipping.")
