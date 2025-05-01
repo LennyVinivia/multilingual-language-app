@@ -1,11 +1,13 @@
 {
   "homepage": {
     "title": "Welcome to the place where you can improve your language skills.",
+    "description": "Dive into our dynamic language-learning platform, where you can enhance your skills through interactive exercises, real-world translations, and daily practice tools.",
     "languageSentence": "Go Ahead and start learning one of the following languages",
     "german": "German",
     "english": "English",
     "spanish": "Spanish",
-    "italian": "Italian"
+    "italian": "Italian",
+    "french": "French"
   },
   "navbar": {
     "german": "German",
@@ -13,6 +15,8 @@
     "spanish": "Spanish",
     "italian": "Italian",
     "home": "Home",
-    "profile": "Profile"
+    "profile": "Profile",
+    "french": "French",
+    "jokes": "Jokes"
   }
 }
