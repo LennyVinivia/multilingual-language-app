@@ -16,9 +16,13 @@ type Exercise = {
 
 type FillInTheBlankProps = {
   exercises: Exercise[];
+  learningLanguage: string;
 };
 
-export default function FillInTheBlank({ exercises }: FillInTheBlankProps) {
+export default function FillInTheBlank({
+  exercises,
+  learningLanguage,
+}: FillInTheBlankProps) {
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -34,7 +38,7 @@ export default function FillInTheBlank({ exercises }: FillInTheBlankProps) {
     useState<ExerciseProgress[]>(initialStatuses);
 
   const handleCancel = () => {
-    router.push("/german");
+    router.push(`/${learningLanguage.toLowerCase()}`);
   };
 
   const handleCheck = () => {
@@ -46,7 +50,7 @@ export default function FillInTheBlank({ exercises }: FillInTheBlankProps) {
         setHasChecked(false);
       } else {
         alert("Alle Fragen abgeschlossen!");
-        router.push("/german");
+        router.push(`/${learningLanguage.toLowerCase()}`);
       }
       return;
     }

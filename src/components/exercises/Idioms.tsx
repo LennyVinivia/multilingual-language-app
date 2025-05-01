@@ -11,14 +11,15 @@ type Exercise = {
   id: string;
   question: string;
   correct_answer: string;
-  options: string[]; // ✅ Array of multiple-choice answers
+  options: string[];
 };
 
 type IdiomProps = {
   exercises: Exercise[];
+  learningLanguage: string;
 };
 
-export default function MultipleChoice({ exercises }: IdiomProps) {
+export default function Idioms({ exercises, learningLanguage }: IdiomProps) {
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -33,7 +34,7 @@ export default function MultipleChoice({ exercises }: IdiomProps) {
     useState<ExerciseProgress[]>(initialStatuses);
 
   const handleCancel = () => {
-    router.push("/german");
+    router.push(`/${learningLanguage.toLowerCase()}`);
   };
 
   const handleCheck = () => {
@@ -45,7 +46,7 @@ export default function MultipleChoice({ exercises }: IdiomProps) {
         setHasChecked(false);
       } else {
         alert("Alle Fragen abgeschlossen!");
-        router.push("/german");
+        router.push(`/${learningLanguage.toLowerCase()}`);
       }
       return;
     }
@@ -97,7 +98,6 @@ export default function MultipleChoice({ exercises }: IdiomProps) {
 
       <h2 className="text-2xl font-bold mt-16">{currentExercise.question}</h2>
 
-      {/* ✅ Multiple Choice Options */}
       <div className="mt-6 flex flex-col gap-4">
         {currentExercise.options.map((option, index) => (
           <Button
@@ -116,7 +116,6 @@ export default function MultipleChoice({ exercises }: IdiomProps) {
         ))}
       </div>
 
-      {/* Footer with Feedback and Check Button */}
       <div
         className={`mt-12 p-8 flex items-center ${
           hasChecked ? "justify-between" : "justify-end"
