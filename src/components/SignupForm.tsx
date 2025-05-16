@@ -34,7 +34,6 @@ export default function SignupForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("DATABASE_URL:", process.env.DATABASE_URL);
     setIsSubmitting(true);
     setErrors({});
 

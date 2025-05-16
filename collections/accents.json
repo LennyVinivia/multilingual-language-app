@@ -1,0 +1,492 @@
+[{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf0c"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "Ines",
+  "accented": "Inés",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf0d"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "cancion",
+  "accented": "canción",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf0e"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "gane",
+  "accented": "gané",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf0f"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "comi",
+  "accented": "comí",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf10"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "alla",
+  "accented": "allá",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf11"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "Raul",
+  "accented": "Raúl",
+  "rule_code": "2",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf12"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "maiz",
+  "accented": "maíz",
+  "rule_code": "2",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf13"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "sonreir",
+  "accented": "sonreír",
+  "rule_code": "2",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf14"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "caracter",
+  "accented": "carácter",
+  "rule_code": "3",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf15"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "habil",
+  "accented": "hábil",
+  "rule_code": "3",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf16"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "lapiz",
+  "accented": "lápiz",
+  "rule_code": "3",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf17"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "mio",
+  "accented": "mío",
+  "rule_code": "4",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf18"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "correrias",
+  "accented": "correrías",
+  "rule_code": "4",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf19"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "sabian",
+  "accented": "sabían",
+  "rule_code": "4",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf1a"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "biceps",
+  "accented": "bíceps",
+  "rule_code": "5",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf1b"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "triceps",
+  "accented": "tríceps",
+  "rule_code": "5",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf1c"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "oleo",
+  "accented": "óleo",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcbe583c964a524cf1d"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "mecanico",
+  "accented": "mecánico",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf1e"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "paguemelo",
+  "accented": "páguemelo",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf1f"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "autentico",
+  "accented": "auténtico",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf20"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "sector turistico",
+  "accented": "sector turístico",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf21"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "demas",
+  "accented": "demás",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf22"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "vorágine",
+  "accented": "vorágine",
+  "rule_code": "6",
+  "example": "Algunas de estas empresas se han embarcado en una especie de vorágine de crecimiento..."
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf23"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "simbolo",
+  "accented": "símbolo",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf24"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "estas",
+  "accented": "éstas",
+  "rule_code": "7",
+  "example": "Si hace 4 años algunas de éstas eran medianías que no facturaban por encima de los 30.000 millones de pesetas..."
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf25"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "mediania",
+  "accented": "medianía",
+  "rule_code": "4",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf26"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "situaran",
+  "accented": "situarán",
+  "rule_code": "1",
+  "example": "se situaran may cerca de los 7000 millones..."
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf27"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "dimension",
+  "accented": "dimensión",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf28"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "estan",
+  "accented": "están",
+  "rule_code": "1",
+  "example": "los grupos que estan mostrando resultados más espectaculares..."
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf29"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "convirtiendose",
+  "accented": "convirtiéndose",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2a"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "situo",
+  "accented": "situó",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2b"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "estos",
+  "accented": "éstos",
+  "rule_code": "7",
+  "example": "A estos habría que añadir otro grupo diversificado como...."
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2c"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "empezo",
+  "accented": "empezó",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2d"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "preve",
+  "accented": "prevé",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2e"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "limite",
+  "accented": "límite",
+  "rule_code": "6",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf2f"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "superaran",
+  "accented": "superarán",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf30"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "vendio",
+  "accented": "vendió",
+  "rule_code": "1",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf31"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "dias",
+  "accented": "días",
+  "rule_code": "4",
+  "example": "En los primeros dias"
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf32"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "adquiriria",
+  "accented": "adquiriría",
+  "rule_code": "4",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf33"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "aumento",
+  "accented": "aumentó",
+  "rule_code": "1",
+  "example": "La división aumento sus ingresos un 21% en 1995"
+},
+{
+  "_id": {
+    "$oid": "68107bcce583c964a524cf34"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "linea aerea",
+  "accented": "línea aérea",
+  "rule_code": "6",
+  "example": null
+}]

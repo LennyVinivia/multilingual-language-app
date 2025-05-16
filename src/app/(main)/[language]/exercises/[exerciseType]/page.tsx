@@ -76,9 +76,6 @@ export default async function ExercisePage({
     return notFound();
   }
 
-  console.log(userLocale);
-  console.log(languageData);
-
   const userLocaleName = LOCALE_MAP[userLocale] ?? "English";
 
   const userLocaleData = await getLanguageByName(userLocaleName);
@@ -128,8 +125,6 @@ export default async function ExercisePage({
       userLocaleData.id,
       session.user?.id || ""
     );
-
-    console.log("Flashcards", flashcards);
 
     return <DarkFlashcards cards={flashcards} />;
   }

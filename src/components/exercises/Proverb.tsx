@@ -18,7 +18,7 @@ export default function Proverb({ cards }: Props) {
   };
 
   const nextPhase = () => {
-    if (phase < 2) {
+    if (phase < 3) {
       setPhase((p) => (p + 1) as 1 | 2);
     } else {
       setPhase(0);
@@ -47,16 +47,21 @@ export default function Proverb({ cards }: Props) {
         </div>
 
         {phase >= 1 && (
-          <div className="pt-8 border-t border-[#6A6A6A]">
+          <div className="pt-4 border-t border-[#6A6A6A]">
             <p className="pt-4 italic text-lg text-white mb-2">
               “{card.proverb}”
             </p>
-            <p className="text-gray-300">{card.frontText}</p>
           </div>
         )}
 
         {phase >= 2 && (
-          <div className="pt-8 border-t border-[#6A6A6A]">
+          <div className="pt-4 border-t border-[#6A6A6A]">
+            <p className="text-gray-300">{card.frontText}</p>
+          </div>
+        )}
+
+        {phase >= 3 && (
+          <div className="pt-4 border-t border-[#6A6A6A]">
             <p className="font-semibold pt-4">{card.translation}</p>
           </div>
         )}

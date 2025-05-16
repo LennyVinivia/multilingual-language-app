@@ -97,8 +97,6 @@ export default function Sentence({
     return <div>Keine Übungen gefunden.</div>;
   }
 
-  console.log("exercises", exercises);
-
   const buttonLabel = hasChecked ? "Nächste Frage" : "Überprüfen";
 
   return (

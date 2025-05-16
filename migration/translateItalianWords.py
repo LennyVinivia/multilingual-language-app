@@ -69,5 +69,5 @@ def add_translations(json_file_path):
         print(f"Updated '{word_text}' with {len(translations_list)} translations.")
 
 if __name__ == "__main__":
-    json_path = "translations/italianTranslations.json"
+    json_path = "translations/italianWordsWithoutTrans.json"
     add_translations(json_path)

@@ -61,7 +61,7 @@ model Account {
     token_type        String
     type              String
     userId            String  @db.ObjectId
-    User              User    @relation(fields: [userId], references: [id])
+    user              User    @relation(fields: [userId], references: [id])
 
     @@unique([provider, providerAccountId])
 }
