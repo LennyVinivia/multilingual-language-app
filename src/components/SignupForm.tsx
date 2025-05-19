@@ -46,10 +46,16 @@ export default function SignupForm() {
       return;
     }
 
+    const payload = Object.fromEntries(formData.entries());
+
     const res = await fetch("/api/signup", {
       method: "POST",
-      body: formData,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
     });
+
     const data = await res.json();
 
     if (data.success) {

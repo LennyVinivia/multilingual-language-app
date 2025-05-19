@@ -13,12 +13,15 @@ const userSignupSchema = z.object({
 
 export async function POST(request: Request) {
   try {
-    const formData = await request.formData();
+    /*const formData = await request.formData();
     const firstname = formData.get("firstname")?.toString() ?? "";
     const lastname = formData.get("lastname")?.toString() ?? "";
     const username = formData.get("username")?.toString() ?? "";
     const email = formData.get("email")?.toString() ?? "";
-    const password = formData.get("password")?.toString() ?? "";
+    const password = formData.get("password")?.toString() ?? "";*/
+
+    const { firstname, lastname, username, email, password } =
+      await request.json();
 
     const parsed = userSignupSchema.parse({
       firstname,
