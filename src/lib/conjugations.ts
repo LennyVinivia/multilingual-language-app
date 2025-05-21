@@ -2,7 +2,7 @@ import db from "./db";
 
 export type ConjCard = {
   id: string;
-  verb: string;
+  infinitive: string;
   tense: string;
   forms: string[];
 };
@@ -22,12 +22,12 @@ export async function getRandomConjExercises(
 ): Promise<ConjCard[]> {
   const all = await db.conjugations.findMany({
     where: { language_id: languageId },
-    select: { id: true, tense: true, forms: true },
+    select: { id: true, tense: true, forms: true, infinitive: true },
   });
   if (all.length === 0) return [];
   const cards: ConjCard[] = all.map((c) => ({
     id: c.id,
-    verb: c.forms[0],
+    infinitive: c.infinitive,
     tense: c.tense,
     forms: c.forms,
   }));

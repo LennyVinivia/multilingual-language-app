@@ -23,7 +23,7 @@ export async function getAccentFlashcards(
       id: true,
       unaccented: true,
       accented: true,
-      rule_code: true,
+      rule: true,
     },
   });
 
@@ -31,7 +31,7 @@ export async function getAccentFlashcards(
     id: a.id,
     languageId: lang.id,
     word: a.unaccented,
-    frontText: a.rule_code ? `Rule ${a.rule_code}` : "",
+    frontText: a.rule ? `Rule: ${a.rule}` : "",
     translation: a.accented,
   }));
 }

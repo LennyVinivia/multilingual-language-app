@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec44"
+    "$oid": "682df315c9c6ecd3bdde6e68"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -19,11 +19,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 14,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec45"
+    "$oid": "682df315c9c6ecd3bdde6e69"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -42,11 +43,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 4,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec46"
+    "$oid": "682df315c9c6ecd3bdde6e6a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -65,11 +67,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec47"
+    "$oid": "682df315c9c6ecd3bdde6e6b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -88,11 +91,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec48"
+    "$oid": "682df315c9c6ecd3bdde6e6c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -111,11 +115,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec49"
+    "$oid": "682df315c9c6ecd3bdde6e6d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -134,11 +139,12 @@
     "$date": "1996-07-20T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "diligere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4a"
+    "$oid": "682df315c9c6ecd3bdde6e6e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -157,11 +163,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4b"
+    "$oid": "682df315c9c6ecd3bdde6e6f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -180,11 +187,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4c"
+    "$oid": "682df315c9c6ecd3bdde6e70"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -203,11 +211,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4d"
+    "$oid": "682df315c9c6ecd3bdde6e71"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -226,11 +235,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4e"
+    "$oid": "682df315c9c6ecd3bdde6e72"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -249,11 +259,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec4f"
+    "$oid": "682df315c9c6ecd3bdde6e73"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -272,11 +283,12 @@
     "$date": "1996-07-31T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "dipingere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec50"
+    "$oid": "682df315c9c6ecd3bdde6e74"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -295,11 +307,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec51"
+    "$oid": "682df315c9c6ecd3bdde6e75"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -318,11 +331,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec52"
+    "$oid": "682df315c9c6ecd3bdde6e76"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -341,11 +355,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec53"
+    "$oid": "682df315c9c6ecd3bdde6e77"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -364,11 +379,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec54"
+    "$oid": "682df315c9c6ecd3bdde6e78"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -387,11 +403,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec55"
+    "$oid": "682df315c9c6ecd3bdde6e79"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -410,11 +427,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec56"
+    "$oid": "682df315c9c6ecd3bdde6e7a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -433,11 +451,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec57"
+    "$oid": "682df315c9c6ecd3bdde6e7b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -456,11 +475,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec58"
+    "$oid": "682df315c9c6ecd3bdde6e7c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -479,11 +499,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec59"
+    "$oid": "682df315c9c6ecd3bdde6e7d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -502,11 +523,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5a"
+    "$oid": "682df315c9c6ecd3bdde6e7e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -525,11 +547,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5b"
+    "$oid": "682df315c9c6ecd3bdde6e7f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -548,11 +571,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5c"
+    "$oid": "682df315c9c6ecd3bdde6e80"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -571,11 +595,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5d"
+    "$oid": "682df315c9c6ecd3bdde6e81"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -594,11 +619,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5e"
+    "$oid": "682df315c9c6ecd3bdde6e82"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -617,11 +643,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec5f"
+    "$oid": "682df315c9c6ecd3bdde6e83"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -640,11 +667,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 2,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec60"
+    "$oid": "682df315c9c6ecd3bdde6e84"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -663,11 +691,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec61"
+    "$oid": "682df315c9c6ecd3bdde6e85"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -686,11 +715,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temere"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec62"
+    "$oid": "682df315c9c6ecd3bdde6e86"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -709,11 +739,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec63"
+    "$oid": "682df315c9c6ecd3bdde6e87"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -732,11 +763,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec64"
+    "$oid": "682df315c9c6ecd3bdde6e88"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -755,11 +787,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec65"
+    "$oid": "682df315c9c6ecd3bdde6e89"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -778,11 +811,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec66"
+    "$oid": "682df315c9c6ecd3bdde6e8a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -801,11 +835,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 1,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec67"
+    "$oid": "682df315c9c6ecd3bdde6e8b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -824,11 +859,12 @@
     "$date": "1996-08-01T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "finire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec68"
+    "$oid": "682df315c9c6ecd3bdde6e8c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -847,11 +883,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec69"
+    "$oid": "682df315c9c6ecd3bdde6e8d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -870,11 +907,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6a"
+    "$oid": "682df315c9c6ecd3bdde6e8e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -893,11 +931,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6b"
+    "$oid": "682df315c9c6ecd3bdde6e8f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -916,11 +955,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6c"
+    "$oid": "682df315c9c6ecd3bdde6e90"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -939,11 +979,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6d"
+    "$oid": "682df315c9c6ecd3bdde6e91"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -962,11 +1003,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "andare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6e"
+    "$oid": "682df316c9c6ecd3bdde6e92"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -985,11 +1027,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec6f"
+    "$oid": "682df316c9c6ecd3bdde6e93"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1008,11 +1051,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec70"
+    "$oid": "682df316c9c6ecd3bdde6e94"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1031,11 +1075,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec71"
+    "$oid": "682df316c9c6ecd3bdde6e95"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1054,11 +1099,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec72"
+    "$oid": "682df316c9c6ecd3bdde6e96"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1077,11 +1123,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec73"
+    "$oid": "682df316c9c6ecd3bdde6e97"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1100,11 +1147,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "appaiare"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec74"
+    "$oid": "682df316c9c6ecd3bdde6e98"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1123,11 +1171,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec75"
+    "$oid": "682df316c9c6ecd3bdde6e99"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1146,11 +1195,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec76"
+    "$oid": "682df316c9c6ecd3bdde6e9a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1169,11 +1219,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d22566f32c46fa8ec77"
+    "$oid": "682df316c9c6ecd3bdde6e9b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1192,11 +1243,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec78"
+    "$oid": "682df316c9c6ecd3bdde6e9c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1215,11 +1267,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec79"
+    "$oid": "682df316c9c6ecd3bdde6e9d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1238,11 +1291,12 @@
     "$date": "1996-09-03T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "aprire"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7a"
+    "$oid": "682df316c9c6ecd3bdde6e9e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1261,11 +1315,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7b"
+    "$oid": "682df316c9c6ecd3bdde6e9f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1284,11 +1339,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7c"
+    "$oid": "682df316c9c6ecd3bdde6ea0"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1307,11 +1363,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7d"
+    "$oid": "682df316c9c6ecd3bdde6ea1"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1330,11 +1387,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7e"
+    "$oid": "682df316c9c6ecd3bdde6ea2"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1353,11 +1411,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec7f"
+    "$oid": "682df316c9c6ecd3bdde6ea3"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1376,11 +1435,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "bere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec80"
+    "$oid": "682df316c9c6ecd3bdde6ea4"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1399,11 +1459,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec81"
+    "$oid": "682df316c9c6ecd3bdde6ea5"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1422,11 +1483,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec82"
+    "$oid": "682df316c9c6ecd3bdde6ea6"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1445,11 +1507,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec83"
+    "$oid": "682df316c9c6ecd3bdde6ea7"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1468,11 +1531,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec84"
+    "$oid": "682df316c9c6ecd3bdde6ea8"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1491,11 +1555,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec85"
+    "$oid": "682df316c9c6ecd3bdde6ea9"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1514,11 +1579,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "cadere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec86"
+    "$oid": "682df316c9c6ecd3bdde6eaa"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1537,11 +1603,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec87"
+    "$oid": "682df316c9c6ecd3bdde6eab"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1560,11 +1627,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec88"
+    "$oid": "682df316c9c6ecd3bdde6eac"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1583,11 +1651,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec89"
+    "$oid": "682df316c9c6ecd3bdde6ead"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1606,11 +1675,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8a"
+    "$oid": "682df316c9c6ecd3bdde6eae"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1629,11 +1699,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8b"
+    "$oid": "682df316c9c6ecd3bdde6eaf"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1652,11 +1723,12 @@
     "$date": "1996-09-04T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "chiedere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8c"
+    "$oid": "682df316c9c6ecd3bdde6eb0"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1675,11 +1747,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8d"
+    "$oid": "682df316c9c6ecd3bdde6eb1"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1698,11 +1771,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8e"
+    "$oid": "682df316c9c6ecd3bdde6eb2"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1721,11 +1795,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec8f"
+    "$oid": "682df316c9c6ecd3bdde6eb3"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1744,11 +1819,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec90"
+    "$oid": "682df316c9c6ecd3bdde6eb4"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1767,11 +1843,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec91"
+    "$oid": "682df316c9c6ecd3bdde6eb5"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1790,11 +1867,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fare"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec92"
+    "$oid": "682df316c9c6ecd3bdde6eb6"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1813,11 +1891,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec93"
+    "$oid": "682df316c9c6ecd3bdde6eb7"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1836,11 +1915,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec94"
+    "$oid": "682df316c9c6ecd3bdde6eb8"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1859,11 +1939,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec95"
+    "$oid": "682df316c9c6ecd3bdde6eb9"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1882,11 +1963,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec96"
+    "$oid": "682df316c9c6ecd3bdde6eba"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1905,11 +1987,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec97"
+    "$oid": "682df316c9c6ecd3bdde6ebb"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1928,11 +2011,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "fingere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec98"
+    "$oid": "682df316c9c6ecd3bdde6ebc"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1951,11 +2035,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec99"
+    "$oid": "682df316c9c6ecd3bdde6ebd"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1974,11 +2059,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9a"
+    "$oid": "682df316c9c6ecd3bdde6ebe"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -1997,11 +2083,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9b"
+    "$oid": "682df316c9c6ecd3bdde6ebf"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -2020,11 +2107,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9c"
+    "$oid": "682df316c9c6ecd3bdde6ec0"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -2043,11 +2131,12 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9d"
+    "$oid": "682df316c9c6ecd3bdde6ec1"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aab"
@@ -2066,14 +2155,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "esigere"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9e"
+    "$oid": "682df44e60bdc7c5e87da402"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "91",
   "tense": "Indicativo presente",
@@ -2089,14 +2179,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ec9f"
+    "$oid": "682df44e60bdc7c5e87da403"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "92",
   "tense": "Indicativo pretérito indefinido",
@@ -2112,14 +2203,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca0"
+    "$oid": "682df44e60bdc7c5e87da404"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "93",
   "tense": "Indicativo futuro imperfecto",
@@ -2135,14 +2227,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca1"
+    "$oid": "682df44e60bdc7c5e87da405"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "94",
   "tense": "Indicativo pretérito imperfecto",
@@ -2158,14 +2251,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca2"
+    "$oid": "682df44e60bdc7c5e87da406"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "95",
   "tense": "Subjuntivo presente",
@@ -2181,14 +2275,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca3"
+    "$oid": "682df44e60bdc7c5e87da407"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "96",
   "tense": "Subjuntivo pretérito imperfecto",
@@ -2204,14 +2299,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca4"
+    "$oid": "682df44e60bdc7c5e87da408"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "97",
   "tense": "Subjuntivo futuro imperfecto",
@@ -2227,14 +2323,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca5"
+    "$oid": "682df44e60bdc7c5e87da409"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "98",
   "tense": "Potencial simple",
@@ -2250,14 +2347,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "temer"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca6"
+    "$oid": "682df44e60bdc7c5e87da40a"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "99",
   "tense": "Indicativo presente",
@@ -2273,14 +2371,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca7"
+    "$oid": "682df44e60bdc7c5e87da40b"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "100",
   "tense": "Indicativo pretérito indefinido",
@@ -2296,14 +2395,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca8"
+    "$oid": "682df44e60bdc7c5e87da40c"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "101",
   "tense": "Indicativo futuro imperfecto",
@@ -2319,14 +2419,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8eca9"
+    "$oid": "682df44e60bdc7c5e87da40d"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "102",
   "tense": "Indicativo pretérito imperfecto",
@@ -2342,14 +2443,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d23566f32c46fa8ecaa"
+    "$oid": "682df44e60bdc7c5e87da40e"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "103",
   "tense": "Subjuntivo presente",
@@ -2365,14 +2467,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecab"
+    "$oid": "682df44e60bdc7c5e87da40f"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "104",
   "tense": "Subjuntivo pretérito imperfecto",
@@ -2388,14 +2491,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecac"
+    "$oid": "682df44e60bdc7c5e87da410"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "105",
   "tense": "Subjuntivo futuro imperfecto",
@@ -2411,14 +2515,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecad"
+    "$oid": "682df44e60bdc7c5e87da411"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "106",
   "tense": "Potencial simple",
@@ -2434,14 +2539,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "partir"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecae"
+    "$oid": "682df44e60bdc7c5e87da412"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "107",
   "tense": "Indicativo presente",
@@ -2457,14 +2563,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecaf"
+    "$oid": "682df44e60bdc7c5e87da413"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "108",
   "tense": "Indicativo pretérito indefinido",
@@ -2480,14 +2587,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb0"
+    "$oid": "682df44e60bdc7c5e87da414"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "109",
   "tense": "Indicativo futuro imperfecto",
@@ -2503,14 +2611,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb1"
+    "$oid": "682df44e60bdc7c5e87da415"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "110",
   "tense": "Indicativo pretérito imperfecto",
@@ -2526,14 +2635,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb2"
+    "$oid": "682df44e60bdc7c5e87da416"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "111",
   "tense": "Subjuntivo presente",
@@ -2549,14 +2659,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb3"
+    "$oid": "682df44e60bdc7c5e87da417"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "112",
   "tense": "Subjuntivo pretérito imperfecto",
@@ -2572,14 +2683,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb4"
+    "$oid": "682df44e60bdc7c5e87da418"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "113",
   "tense": "Subjuntivo futuro imperfecto",
@@ -2595,14 +2707,15 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 },
 {
   "_id": {
-    "$oid": "68107d24566f32c46fa8ecb5"
+    "$oid": "682df44e60bdc7c5e87da419"
   },
   "language_id": {
-    "$oid": "67bed42569a3680a95974aab"
+    "$oid": "67bed42569a3680a95974aaa"
   },
   "verb_id": "114",
   "tense": "Potencial simple",
@@ -2618,5 +2731,6 @@
     "$date": "1996-09-07T00:00:00.000Z"
   },
   "cumul": 0,
-  "counter": 0
+  "counter": 0,
+  "infinitive": "amar"
 }]

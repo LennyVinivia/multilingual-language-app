@@ -9,18 +9,23 @@ import { GoXCircleFill } from "react-icons/go";
 import { useRouter } from "next/navigation";
 import { ConjCard } from "@/lib/conjugations";
 
-const PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"];
+const PRONOUNS_BY_LANG: Record<string, string[]> = {
+  Italian: ["io", "tu", "lui/lei", "noi", "voi", "loro"],
+  Spanish: ["yo", "tú", "él/ella", "nosotros", "vosotros", "ellos"],
+};
 
 type Props = {
   cards: ConjCard[];
+  language: string;
 };
 
-export default function ConjugationGrid({ cards }: Props) {
+export default function ConjugationGrid({ cards, language }: Props) {
   const router = useRouter();
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<string[]>(() => Array(6).fill(""));
   const [hasChecked, setHasChecked] = useState(false);
   const [isCorrect, setCorrect] = useState<boolean | null>(null);
+  const PRONOUNS = PRONOUNS_BY_LANG[language];
 
   const [slotCorrect, setSlotCorrect] = useState<boolean[]>(() =>
     Array(6).fill(false)
@@ -37,29 +42,32 @@ export default function ConjugationGrid({ cards }: Props) {
     setSlotCorrect(Array(6).fill(false));
   }, [idx]);
 
-  const current = cards[idx];
+  const currentRaw = cards[idx];
+  const current = {
+    ...currentRaw,
+    forms:
+      language === "Spanish"
+        ? currentRaw.forms.map((f) => f.replace(/-/g, ""))
+        : currentRaw.forms,
+  };
 
   const handleCheck = () => {
     setHasChecked(true);
-
     const trimmed = answers.map((a) => a.trim().toLowerCase());
-    const correctForms = current.forms.map((f) => f.trim());
-    const lowerCorrect = correctForms.map((f) => f.toLowerCase());
-
+    const correctFormsRaw = current.forms.map((f) => f.trim());
+    const lowerCorrect = correctFormsRaw.map((f) => f.toLowerCase());
     const perSlot = trimmed.map((ans, i) => ans === lowerCorrect[i]);
     setSlotCorrect(perSlot);
 
     const allRight = perSlot.every(Boolean);
     setCorrect(allRight);
-
     setStatuses((st) =>
       st.map((s, i) =>
         i === idx ? { ...s, status: allRight ? "right" : "wrong" } : s
       )
     );
-
     setAnswers((prev) =>
-      prev.map((given, i) => (perSlot[i] ? given : correctForms[i]))
+      prev.map((given, i) => (perSlot[i] ? given : correctFormsRaw[i]))
     );
   };
 
@@ -88,7 +96,7 @@ export default function ConjugationGrid({ cards }: Props) {
       </div>
 
       <h2 className="text-2xl font-bold mt-8">
-        Coniuga “{current.verb}” – {current.tense}
+        Coniuga “{current.infinitive}” – {current.tense}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 w-full max-w-xl">

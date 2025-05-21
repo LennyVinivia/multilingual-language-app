@@ -94,17 +94,19 @@ export default async function ExercisePage({
       languageData.name
     );
     return (
-      <div className="p-4 text-red-500">
-        You are already using {languageData.name} as your app local language!
-        Please choose a different language to learn.
+      <div className="p-4 text-yellow-500 text-xl">
+        You are already using {languageData.name} as your app local language! If
+        you want to learn {languageData.name} change your local Language besides
+        the Multilingual-Titel in the Navigation-Bar to another language.
       </div>
     );
   }
 
   if (formattedExerciseType === "conjugation") {
+    console.log("Language", languageData);
     const cards: ConjCard[] = await getRandomConjExercises(languageData.id);
 
-    return <ConjugationGrid cards={cards} />;
+    return <ConjugationGrid cards={cards} language={languageData.name} />;
   }
 
   if (formattedExerciseType === "accents") {

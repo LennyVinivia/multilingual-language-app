@@ -4,8 +4,8 @@ from datetime import datetime
 
 DB_URI     = "URI"
 DB_NAME    = "multilingual-language"
-JSON_PATH  = "json/italianConjugations.json"
-LANG_NAME  = "Italian"
+JSON_PATH  = "json/spanishConjugations.json"
+LANG_NAME  = "Spanish"
 
 client     = MongoClient(DB_URI)
 db         = client[DB_NAME]

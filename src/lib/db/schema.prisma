@@ -119,7 +119,7 @@ model accents {
     accented    String
     example     String?
     language_id String  @db.ObjectId
-    rule_code   String
+    rule        String
     unaccented  String
 }
 
@@ -141,6 +141,7 @@ model conjugations {
     language_id String   @db.ObjectId
     tense       String
     verb_id     String
+    infinitive  String
 }
 
 model exercises {

@@ -54,7 +54,6 @@ export default function FillInTheBlank({
       }
       return;
     }
-
     const currentEx = exercises[activeIndex];
     if (!currentEx) return;
 
@@ -62,7 +61,6 @@ export default function FillInTheBlank({
     setCorrectAnswer(correct);
     const userAnswer = answer.toLowerCase().trim();
     const isAnswerCorrect = correct === userAnswer;
-
     setExerciseStatuses((prev) =>
       prev.map((item, i) =>
         i === activeIndex
@@ -70,7 +68,6 @@ export default function FillInTheBlank({
           : item
       )
     );
-
     setIsCorrect(isAnswerCorrect);
     setHasChecked(true);
   };

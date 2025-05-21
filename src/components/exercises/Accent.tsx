@@ -20,12 +20,12 @@ type Props = {
 
 export default function Accent({ cards }: Props) {
   const [idx, setIdx] = useState(0);
-  const [flip, setFlip] = useState(false);
+  const [revealStep, setRevealStep] = useState<0 | 1 | 2>(0);
   const [dir, setDir] = useState(0);
   const [showHelp, setHelp] = useState(false);
 
   const go = (d: -1 | 1) => {
-    setFlip(false);
+    setRevealStep(0);
     setDir(d);
     setIdx((i) => (i + d + cards.length) % cards.length);
   };
@@ -35,8 +35,9 @@ export default function Accent({ cards }: Props) {
       if (showHelp && e.key === "Escape") return setHelp(false);
       if (e.key === "ArrowLeft") go(-1);
       if (e.key === "ArrowRight") go(1);
-      if (["ArrowUp", "ArrowDown", " ", "Enter"].includes(e.key))
-        setFlip((f) => !f);
+      if (["ArrowUp", "ArrowDown", " ", "Enter"].includes(e.key)) {
+        setRevealStep((step) => (step < 2 ? ((step + 1) as 0 | 1 | 2) : 0));
+      }
     };
     window.addEventListener("keydown", onKey as any);
     return () => window.removeEventListener("keydown", onKey as any);
@@ -72,16 +73,27 @@ export default function Accent({ cards }: Props) {
           className="relative w-[300px] md:w-[400px] h-[240px] md:h-[300px]"
         >
           <div
-            onClick={() => setFlip((f) => !f)}
+            onClick={() =>
+              setRevealStep((step) =>
+                step < 2 ? ((step + 1) as 0 | 1 | 2) : 0
+              )
+            }
             className={clsx(
               "w-full h-full perspective-1000 preserve-3d transition-transform duration-500 cursor-pointer",
-              flip ? "rotate-y-180" : "rotate-y-0"
+              revealStep === 2 ? "rotate-y-180" : "rotate-y-0"
             )}
           >
+            {/* Front Side */}
             <div className="absolute inset-0 rounded-xl border-2 border-[#6A6A6A] bg-[#141F24] backface-visibility-hidden flex flex-col items-center justify-center p-4">
               <h2 className="text-2xl font-bold mb-2">{card.word}</h2>
+              {revealStep >= 1 && (
+                <p className="italic text-center max-w-xs text-gray-200">
+                  {card.frontText}
+                </p>
+              )}
             </div>
 
+            {/* Back Side */}
             <div
               className="absolute inset-0 rounded-xl border-2 border-[#6A6A6A] bg-[#1E2A2E] backface-visibility-hidden rotate-y-180 flex items-center justify-center p-4"
               style={{ transform: "rotateY(180deg)" }}
@@ -101,12 +113,18 @@ export default function Accent({ cards }: Props) {
         >
           <FiArrowLeft size={24} />
         </Button>
+
         <Button
-          onClick={(e) => (e.stopPropagation(), setFlip((f) => !f))}
+          onClick={() =>
+            setRevealStep((step) => (step < 2 ? ((step + 1) as 0 | 1 | 2) : 0))
+          }
           className="px-4 py-2 bg-transparent hover:bg-green-700 rounded-xl font-bold"
         >
-          Flip
+          {revealStep === 0 && "Show Rule"}
+          {revealStep === 1 && "Show Accent"}
+          {revealStep === 2 && "Reset"}
         </Button>
+
         <Button
           onClick={() => go(1)}
           className="px-4 py-2 bg-[#141F24] rounded-xl hover:bg-gray-800"
@@ -128,7 +146,7 @@ export default function Accent({ cards }: Props) {
               <FiInfo /> How to navigate
             </h3>
             <ul className="list-disc pl-6 space-y-1 text-sm">
-              <li>Click or ↑/↓ or Space/Enter to flip.</li>
+              <li>Click or ↑/↓ or Space/Enter to reveal steps.</li>
               <li>←/→ to change card.</li>
               <li>Esc or outside click to close.</li>
             </ul>

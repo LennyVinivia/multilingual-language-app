@@ -3,8 +3,8 @@ from pymongo import MongoClient
 
 DB_URI    = "URI"
 DB_NAME   = "multilingual-language"
-CSV_PATH  = "csv/italian/italianAccent.csv"
-LANG_NAME = "Italian"
+CSV_PATH  = "csv/spanish/spanishAccent.csv"
+LANG_NAME = "Spanish"
 
 client    = MongoClient(DB_URI)
 db        = client[DB_NAME]
@@ -24,7 +24,7 @@ def import_accents(csv_path):
         for row in reader:
             unaccented = row["Palabra"].strip()
             accented   = row["PalabraAcento"].strip() or None
-            code       = row["Code"].strip()
+            rule       = row["Code"].strip()
             example    = row.get("Frase", "").strip()
 
             if not unaccented or not accented:
@@ -35,7 +35,7 @@ def import_accents(csv_path):
                 "language_id":   lang_id,
                 "unaccented":    unaccented,
                 "accented":      accented,
-                "rule_code":     code,
+                "rule":     rule,
                 "example":       example or None,
             }
 

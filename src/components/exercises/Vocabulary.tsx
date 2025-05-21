@@ -28,7 +28,7 @@ type Props = {
 
 export default function DarkFlashcards({ cards }: Props) {
   const [idx, setIdx] = useState(0);
-  const [flip, setFlip] = useState(false);
+  const [revealStep, setRevealStep] = useState<0 | 1 | 2>(0); // 0 = word, 1 = frontText, 2 = translation
   const [dir, setDir] = useState(0);
   const [showHelp, setHelp] = useState(false);
   const [onlyTodo, setTodo] = useState(false);
@@ -46,7 +46,7 @@ export default function DarkFlashcards({ cards }: Props) {
   const card = visible[idx];
 
   const go = (d: -1 | 1) => {
-    setFlip(false);
+    setRevealStep(0);
     setDir(d);
     setIdx((p) => (p + d + visible.length) % visible.length);
   };
@@ -66,19 +66,19 @@ export default function DarkFlashcards({ cards }: Props) {
 
   const stepStatus = (e: MouseEvent) => {
     e.stopPropagation();
-
     const current = status[card.id] ?? 0;
     let next: CardStatus;
     if (current === 0) next = 1;
     else if (current === 1) next = 2;
     else next = 1;
-
     setLocalAndServer(next);
   };
+
   const masterCard = (e: MouseEvent) => {
     e.stopPropagation();
     setLocalAndServer(2);
   };
+
   const resetStatus = (e: MouseEvent) => {
     e.stopPropagation();
     setLocalAndServer(0);
@@ -89,7 +89,9 @@ export default function DarkFlashcards({ cards }: Props) {
       if (showHelp && e.key === "Escape") return setHelp(false);
       if (e.key === "ArrowRight") go(1);
       if (e.key === "ArrowLeft") go(-1);
-      if (["ArrowUp", "ArrowDown", " "].includes(e.key)) setFlip((f) => !f);
+      if (["ArrowUp", "ArrowDown", " "].includes(e.key)) {
+        setRevealStep((step) => (step < 2 ? ((step + 1) as 0 | 1 | 2) : 0));
+      }
     };
     window.addEventListener("keydown", h as any);
     return () => window.removeEventListener("keydown", h as any);
@@ -149,17 +151,23 @@ export default function DarkFlashcards({ cards }: Props) {
           className="relative w-[300px] md:w-[400px] h-[240px] md:h-[300px]"
         >
           <div
-            onClick={() => setFlip((f) => !f)}
+            onClick={() =>
+              setRevealStep((step) =>
+                step < 2 ? ((step + 1) as 0 | 1 | 2) : 0
+              )
+            }
             className={clsx(
               "w-full h-full perspective-1000 preserve-3d transition-transform duration-500 cursor-pointer",
-              flip ? "rotate-y-180" : "rotate-y-0"
+              revealStep === 2 ? "rotate-y-180" : "rotate-y-0"
             )}
           >
             <div className="absolute inset-0 rounded-xl border-2 border-[#6A6A6A] bg-[#141F24] backface-visibility-hidden flex flex-col items-center justify-center p-4">
               <h2 className="text-2xl font-bold mb-2">{card.word}</h2>
-              <p className="italic text-center max-w-xs text-gray-200">
-                {card.frontText}
-              </p>
+              {revealStep >= 1 && (
+                <p className="italic text-center max-w-xs text-gray-200">
+                  {card.frontText}
+                </p>
+              )}
             </div>
 
             <div
@@ -173,6 +181,7 @@ export default function DarkFlashcards({ cards }: Props) {
           </div>
         </motion.div>
       </AnimatePresence>
+
       <div className="flex items-center space-x-4">
         <Button
           onClick={(e) => (e.stopPropagation(), go(-1))}
@@ -189,10 +198,15 @@ export default function DarkFlashcards({ cards }: Props) {
         </Button>
 
         <Button
-          onClick={(e) => (e.stopPropagation(), setFlip((f) => !f))}
+          onClick={(e) => {
+            e.stopPropagation();
+            setRevealStep((step) => (step < 2 ? ((step + 1) as 0 | 1 | 2) : 0));
+          }}
           className="px-4 py-2 bg-transparent hover:bg-green-700 rounded-xl font-bold"
         >
-          Flip
+          {revealStep === 0 && "More"}
+          {revealStep === 1 && "Flip"}
+          {revealStep === 2 && "Reset"}
         </Button>
 
         <Button
@@ -231,7 +245,7 @@ export default function DarkFlashcards({ cards }: Props) {
               <FiInfo /> Flashcard Controls
             </h3>
             <ul className="list-disc pl-6 space-y-1 text-sm">
-              <li>Click or ↑ / ↓ to flip.</li>
+              <li>Click or ↑ / ↓ to reveal steps.</li>
               <li>← / → to change card.</li>
               <li>✔︎ single‑click → 1, double‑click → 2.</li>
               <li>✕ resets the card.</li>
