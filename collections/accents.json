@@ -1,492 +1,624 @@
 [{
   "_id": {
-    "$oid": "68107bcbe583c964a524cf0c"
+    "$oid": "682d93b727965b6c7d427250"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "Ines",
   "accented": "Inés",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf0d"
+    "$oid": "682d93b727965b6c7d427251"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "cancion",
   "accented": "canción",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf0e"
+    "$oid": "682d93b727965b6c7d427252"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "gane",
   "accented": "gané",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf0f"
+    "$oid": "682d93b727965b6c7d427253"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "comi",
   "accented": "comí",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf10"
+    "$oid": "682d93b727965b6c7d427254"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "alla",
   "accented": "allá",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf11"
+    "$oid": "682d93b727965b6c7d427255"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "Raul",
   "accented": "Raúl",
-  "rule_code": "2",
+  "rule": "Aguda: se acentúan las palabras que, aunque terminan en consonante distinta de n o s, tienen en la última sílaba un hiato formado por una vocal abierta y otra cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf12"
+    "$oid": "682d93b727965b6c7d427256"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "maiz",
   "accented": "maíz",
-  "rule_code": "2",
+  "rule": "Aguda: se acentúan las palabras que, aunque terminan en consonante distinta de n o s, tienen en la última sílaba un hiato formado por una vocal abierta y otra cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf13"
+    "$oid": "682d93b727965b6c7d427257"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "sonreir",
   "accented": "sonreír",
-  "rule_code": "2",
+  "rule": "Aguda: se acentúan las palabras que, aunque terminan en consonante distinta de n o s, tienen en la última sílaba un hiato formado por una vocal abierta y otra cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf14"
+    "$oid": "682d93b727965b6c7d427258"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "caracter",
   "accented": "carácter",
-  "rule_code": "3",
+  "rule": "Llana: se acentúan todas las palabras que terminan en consonante distinta de n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf15"
+    "$oid": "682d93b727965b6c7d427259"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "habil",
   "accented": "hábil",
-  "rule_code": "3",
+  "rule": "Llana: se acentúan todas las palabras que terminan en consonante distinta de n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf16"
+    "$oid": "682d93b727965b6c7d42725a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "lapiz",
   "accented": "lápiz",
-  "rule_code": "3",
+  "rule": "Llana: se acentúan todas las palabras que terminan en consonante distinta de n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf17"
+    "$oid": "682d93b727965b6c7d42725b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "mio",
   "accented": "mío",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf18"
+    "$oid": "682d93b727965b6c7d42725c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "correrias",
   "accented": "correrías",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf19"
+    "$oid": "682d93b727965b6c7d42725d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "sabian",
   "accented": "sabían",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf1a"
+    "$oid": "682d93b727965b6c7d42725e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "biceps",
   "accented": "bíceps",
-  "rule_code": "5",
+  "rule": "Las palabras que terminan en el grupo consonante -ps",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf1b"
+    "$oid": "682d93b727965b6c7d42725f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "triceps",
   "accented": "tríceps",
-  "rule_code": "5",
+  "rule": "Las palabras que terminan en el grupo consonante -ps",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf1c"
+    "$oid": "682d93b727965b6c7d427260"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "oleo",
   "accented": "óleo",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcbe583c964a524cf1d"
+    "$oid": "682d93b727965b6c7d427261"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "mecanico",
   "accented": "mecánico",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf1e"
+    "$oid": "682d93b727965b6c7d427262"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "paguemelo",
   "accented": "páguemelo",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf1f"
+    "$oid": "682d93b727965b6c7d427263"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "el",
+  "accented": "él",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427264"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "mas",
+  "accented": "más",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427265"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "si",
+  "accented": "sí",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427266"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "de",
+  "accented": "dé",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427267"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "mi",
+  "accented": "mí",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427268"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "te",
+  "accented": "té",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d427269"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "tu",
+  "accented": "tú",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d42726a"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "se",
+  "accented": "sé",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d42726b"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "este",
+  "accented": "éste",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b727965b6c7d42726c"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "aun",
+  "accented": "aún",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b827965b6c7d42726d"
+  },
+  "language_id": {
+    "$oid": "67bed42569a3680a95974aaa"
+  },
+  "unaccented": "solo",
+  "accented": "sólo",
+  "rule": "Acento diacrítico",
+  "example": null
+},
+{
+  "_id": {
+    "$oid": "682d93b827965b6c7d42726e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "autentico",
   "accented": "auténtico",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf20"
+    "$oid": "682d93b827965b6c7d42726f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "sector turistico",
   "accented": "sector turístico",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf21"
+    "$oid": "682d93b827965b6c7d427270"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "demas",
   "accented": "demás",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf22"
+    "$oid": "682d93b827965b6c7d427271"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "vorágine",
   "accented": "vorágine",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": "Algunas de estas empresas se han embarcado en una especie de vorágine de crecimiento..."
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf23"
+    "$oid": "682d93b827965b6c7d427272"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "simbolo",
   "accented": "símbolo",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf24"
+    "$oid": "682d93b827965b6c7d427273"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "estas",
   "accented": "éstas",
-  "rule_code": "7",
+  "rule": "Acento diacrítico",
   "example": "Si hace 4 años algunas de éstas eran medianías que no facturaban por encima de los 30.000 millones de pesetas..."
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf25"
+    "$oid": "682d93b827965b6c7d427274"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "mediania",
   "accented": "medianía",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf26"
+    "$oid": "682d93b827965b6c7d427275"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "situaran",
   "accented": "situarán",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": "se situaran may cerca de los 7000 millones..."
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf27"
+    "$oid": "682d93b827965b6c7d427276"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "dimension",
   "accented": "dimensión",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf28"
+    "$oid": "682d93b827965b6c7d427277"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "estan",
   "accented": "están",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": "los grupos que estan mostrando resultados más espectaculares..."
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf29"
+    "$oid": "682d93b827965b6c7d427278"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "convirtiendose",
   "accented": "convirtiéndose",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2a"
+    "$oid": "682d93b827965b6c7d427279"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "situo",
   "accented": "situó",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2b"
+    "$oid": "682d93b827965b6c7d42727a"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "estos",
   "accented": "éstos",
-  "rule_code": "7",
+  "rule": "Acento diacrítico",
   "example": "A estos habría que añadir otro grupo diversificado como...."
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2c"
+    "$oid": "682d93b827965b6c7d42727b"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "empezo",
   "accented": "empezó",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2d"
+    "$oid": "682d93b827965b6c7d42727c"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "preve",
   "accented": "prevé",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2e"
+    "$oid": "682d93b827965b6c7d42727d"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "limite",
   "accented": "límite",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf2f"
+    "$oid": "682d93b827965b6c7d42727e"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "superaran",
   "accented": "superarán",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf30"
+    "$oid": "682d93b827965b6c7d42727f"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "vendio",
   "accented": "vendió",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf31"
+    "$oid": "682d93b827965b6c7d427280"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "dias",
   "accented": "días",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": "En los primeros dias"
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf32"
+    "$oid": "682d93b827965b6c7d427281"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "adquiriria",
   "accented": "adquiriría",
-  "rule_code": "4",
+  "rule": "Llana: se acentúan la palabras que aunque terminan en n, s o en vocal, tienen en la penúltima sílaba un hiato por vocal cerrada tónica",
   "example": null
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf33"
+    "$oid": "682d93b827965b6c7d427282"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "aumento",
   "accented": "aumentó",
-  "rule_code": "1",
+  "rule": "Aguda: se acentúan todas las plababras que poseen más de una sola sílaba y terminan en vocal o en las consonantes n o s.",
   "example": "La división aumento sus ingresos un 21% en 1995"
 },
 {
   "_id": {
-    "$oid": "68107bcce583c964a524cf34"
+    "$oid": "682d93b827965b6c7d427283"
   },
   "language_id": {
     "$oid": "67bed42569a3680a95974aaa"
   },
   "unaccented": "linea aerea",
   "accented": "línea aérea",
-  "rule_code": "6",
+  "rule": "Esdrújula o sobreesdrújula: se acentúan todas las palabras",
   "example": null
 }]
